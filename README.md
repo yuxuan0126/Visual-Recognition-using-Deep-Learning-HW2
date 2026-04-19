@@ -1,4 +1,5 @@
 # Visual-Recognition-using-Deep-Learning-HW2
+314706009 王妤瑄
 ## Introduction
 This project implements a **DEtection TRansformer (DETR)** model for
 digit detection (digits 0-9). The architecture is designed to meet
@@ -85,11 +86,4 @@ Backbone.
 * **Prediction Threshold**: 0.05.
 * **Top-K Detections**: Limits output to the top 30 scoring boxes
 per image.
-![替代文字](training_curve.png)
----
-
-### Academic Integrity Statement
-This implementation strictly follows the &quot;backbone-only pretrained&quot;
-rule. The Transformer encoder and decoder layers are initialized with
-random weights and do not inherit parameters from any pretrained DETR
-checkpoints.
+![pic](training_curve.png)
