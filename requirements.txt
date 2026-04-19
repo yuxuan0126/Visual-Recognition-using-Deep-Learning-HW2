@@ -1,25 +1,22 @@
-# 核心深度學習
-torch==2.7.1
-torchvision==0.22.1
+# 核心深度學習 (建議與你的 CUDA 版本匹配)
+torch>=2.0.0
+torchvision>=0.15.0
 numpy>=1.24.4,<2.0.0
 
-# 模型與 Transformers
-transformers==5.4.0
-tokenizers==0.22.2
-timm==1.0.26
-safetensors==0.7.0
+# 模型與 Transformers (DETR 核心依賴)
+transformers>=4.40.0
+timm>=0.9.0
+safetensors>=0.4.0
+accelerate>=0.26.0
 
-# 影像處理 (降級 OpenCV 以相容 NumPy 1.x)
-albumentations==2.0.8
-albucore==0.0.24
-pillow==12.1.1
-opencv-python-headless==4.9.0.80
+# 影像處理
+albumentations>=1.4.0
+pillow>=10.0.0
+opencv-python-headless>=4.8.0
 
 # 評估與工具
-torchmetrics==1.9.0
-pycocotools==2.0.11
-scipy==1.15.3
-PyYAML==6.0.3
-tqdm==4.67.3
-requests==2.33.1
-matplotlib
+torchmetrics[detection]>=1.3.0
+pycocotools>=2.0.7
+scipy>=1.10.0
+tqdm>=4.66.0
+matplotlib>=3.7.0
