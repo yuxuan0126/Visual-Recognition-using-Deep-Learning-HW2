@@ -86,4 +86,4 @@ Backbone.
 * **Prediction Threshold**: 0.05.
 * **Top-K Detections**: Limits output to the top 30 scoring boxes
 per image.
-![pic](training_curve.png)
+![pic](snapshot.png)
