@@ -1,0 +1,1320 @@
+nohup: ignoring input
+/home/eclab314/314706009/hw2.1.py:134: UserWarning: Argument(s) 'var_limit' are not valid for transform GaussNoise
+  A.GaussNoise(var_limit=(5.0, 25.0), p=0.2),
+[Config] NUM_QUERIES=10 | enc=6 dec=3 | dilation=True | batch=4×acc3
+Loading weights:   0%|          | 0/530 [00:00<?, ?it/s]Loading weights: 100%|██████████| 530/530 [00:00<00:00, 17099.07it/s]
+[1mDetrForObjectDetection LOAD REPORT[0m from: facebook/detr-resnet-50
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[Model] Copied 265 backbone tensors from pretrained DETR. Encoder/decoder initialised from scratch.
+Loading weights:   0%|          | 0/530 [00:00<?, ?it/s]Loading weights: 100%|██████████| 530/530 [00:00<00:00, 14474.70it/s]
+[1mDetrForObjectDetection LOAD REPORT[0m from: facebook/detr-resnet-50
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[Model] Copied 265 backbone tensors from pretrained DETR. Encoder/decoder initialised from scratch.
+[Data] train=30062 val=3340 | device=cuda | AMP=True
+[Train] Starting | epochs=70 | freeze_backbone=5 epochs
+[02:57:02] Backbone: FROZEN
+  [02:57:41] ep=1 step=500/7516 loss=23.3342 | lr=1.34e-06
+  [02:58:09] ep=1 step=1000/7516 loss=19.7514 | lr=2.67e-06
+  [02:58:37] ep=1 step=1500/7516 loss=18.2902 | lr=4.00e-06
+  [02:59:04] ep=1 step=2000/7516 loss=16.0869 | lr=5.33e-06
+  [02:59:32] ep=1 step=2500/7516 loss=16.1203 | lr=6.66e-06
+  [02:59:59] ep=1 step=3000/7516 loss=14.5753 | lr=7.99e-06
+  [03:00:27] ep=1 step=3500/7516 loss=12.3148 | lr=9.32e-06
+/home/eclab314/miniconda3/envs/314706009/lib/python3.10/site-packages/albumentations/augmentations/dropout/functional.py:559: RuntimeWarning: invalid value encountered in divide
+  visibility_ratios = remaining_areas / box_areas
+  [03:00:54] ep=1 step=4000/7516 loss=14.8141 | lr=1.06e-05
+  [03:01:22] ep=1 step=4500/7516 loss=10.9549 | lr=1.20e-05
+  [03:01:49] ep=1 step=5000/7516 loss=13.5218 | lr=1.33e-05
+  [03:02:17] ep=1 step=5500/7516 loss=10.8142 | lr=1.46e-05
+  [03:02:44] ep=1 step=6000/7516 loss=12.3482 | lr=1.60e-05
+  [03:03:12] ep=1 step=6500/7516 loss=12.0035 | lr=1.73e-05
+  [03:03:39] ep=1 step=7000/7516 loss=12.4124 | lr=1.86e-05
+  [03:04:06] ep=1 step=7500/7516 loss=11.3850 | lr=2.00e-05
+[03:04:07] Epoch 1/70 | loss=15.4380 | lr=2.00e-05 | 7.1min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:04:35] ep=2 step=500/7516 loss=11.6566 | lr=2.13e-05
+  [03:05:02] ep=2 step=1000/7516 loss=12.9585 | lr=2.27e-05
+  [03:05:29] ep=2 step=1500/7516 loss=11.8014 | lr=2.40e-05
+  [03:05:57] ep=2 step=2000/7516 loss=13.4654 | lr=2.53e-05
+  [03:06:24] ep=2 step=2500/7516 loss=12.5378 | lr=2.67e-05
+  [03:06:51] ep=2 step=3000/7516 loss=9.8924 | lr=2.80e-05
+  [03:07:18] ep=2 step=3500/7516 loss=13.7342 | lr=2.93e-05
+  [03:07:46] ep=2 step=4000/7516 loss=14.1662 | lr=3.06e-05
+  [03:08:13] ep=2 step=4500/7516 loss=11.8049 | lr=3.20e-05
+  [03:08:41] ep=2 step=5000/7516 loss=12.3932 | lr=3.33e-05
+  [03:09:08] ep=2 step=5500/7516 loss=13.4709 | lr=3.46e-05
+  [03:09:36] ep=2 step=6000/7516 loss=13.5642 | lr=3.60e-05
+  [03:10:03] ep=2 step=6500/7516 loss=11.0978 | lr=3.73e-05
+  [03:10:30] ep=2 step=7000/7516 loss=9.8484 | lr=3.86e-05
+  [03:10:58] ep=2 step=7500/7516 loss=9.9381 | lr=4.00e-05
+[03:10:59] Epoch 2/70 | loss=11.8572 | lr=4.00e-05 | 6.9min
+[03:13:03] Val mAP=0.0003 | mAP50=0.0021 | avg_preds=10.0 | max_score=0.4714
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 13.92it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:13:31] ep=3 step=500/7516 loss=10.9773 | lr=4.13e-05
+  [03:13:58] ep=3 step=1000/7516 loss=11.0304 | lr=4.27e-05
+  [03:14:25] ep=3 step=1500/7516 loss=12.7672 | lr=4.40e-05
+  [03:14:53] ep=3 step=2000/7516 loss=13.7592 | lr=4.53e-05
+  [03:15:20] ep=3 step=2500/7516 loss=10.9356 | lr=4.67e-05
+  [03:15:47] ep=3 step=3000/7516 loss=8.9755 | lr=4.80e-05
+  [03:16:15] ep=3 step=3500/7516 loss=11.3183 | lr=4.93e-05
+  [03:16:42] ep=3 step=4000/7516 loss=12.5723 | lr=5.06e-05
+  [03:17:09] ep=3 step=4500/7516 loss=14.3223 | lr=5.20e-05
+  [03:17:37] ep=3 step=5000/7516 loss=11.2142 | lr=5.33e-05
+  [03:18:04] ep=3 step=5500/7516 loss=10.3590 | lr=5.46e-05
+  [03:18:32] ep=3 step=6000/7516 loss=13.0658 | lr=5.60e-05
+  [03:18:59] ep=3 step=6500/7516 loss=10.8636 | lr=5.73e-05
+  [03:19:27] ep=3 step=7000/7516 loss=9.8701 | lr=5.86e-05
+  [03:19:54] ep=3 step=7500/7516 loss=9.9674 | lr=6.00e-05
+[03:19:55] Epoch 3/70 | loss=11.0488 | lr=6.00e-05 | 6.9min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:20:23] ep=4 step=500/7516 loss=10.4582 | lr=6.13e-05
+  [03:20:50] ep=4 step=1000/7516 loss=8.9465 | lr=6.27e-05
+  [03:21:17] ep=4 step=1500/7516 loss=9.8563 | lr=6.40e-05
+  [03:21:44] ep=4 step=2000/7516 loss=9.8469 | lr=6.53e-05
+  [03:22:12] ep=4 step=2500/7516 loss=15.5583 | lr=6.67e-05
+  [03:22:39] ep=4 step=3000/7516 loss=10.0542 | lr=6.80e-05
+  [03:23:07] ep=4 step=3500/7516 loss=15.5148 | lr=6.93e-05
+  [03:23:34] ep=4 step=4000/7516 loss=11.5972 | lr=7.06e-05
+  [03:24:02] ep=4 step=4500/7516 loss=14.3240 | lr=7.20e-05
+  [03:24:29] ep=4 step=5000/7516 loss=10.4182 | lr=7.33e-05
+/home/eclab314/miniconda3/envs/314706009/lib/python3.10/site-packages/albumentations/augmentations/dropout/functional.py:559: RuntimeWarning: invalid value encountered in divide
+  visibility_ratios = remaining_areas / box_areas
+  [03:24:56] ep=4 step=5500/7516 loss=7.3478 | lr=7.46e-05
+  [03:25:24] ep=4 step=6000/7516 loss=9.0838 | lr=7.60e-05
+  [03:25:51] ep=4 step=6500/7516 loss=15.8719 | lr=7.73e-05
+  [03:26:18] ep=4 step=7000/7516 loss=9.3184 | lr=7.86e-05
+  [03:26:46] ep=4 step=7500/7516 loss=10.6560 | lr=8.00e-05
+[03:26:47] Epoch 4/70 | loss=10.3623 | lr=8.00e-05 | 6.9min
+[03:27:24] Val mAP=0.0020 | mAP50=0.0063 | avg_preds=10.0 | max_score=0.8462
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.97it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.95it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:27:53] ep=5 step=500/7516 loss=7.3196 | lr=8.13e-05
+  [03:28:20] ep=5 step=1000/7516 loss=12.0056 | lr=8.27e-05
+  [03:28:48] ep=5 step=1500/7516 loss=7.4121 | lr=8.40e-05
+  [03:29:16] ep=5 step=2000/7516 loss=11.3209 | lr=8.53e-05
+  [03:29:43] ep=5 step=2500/7516 loss=7.4412 | lr=8.67e-05
+  [03:30:11] ep=5 step=3000/7516 loss=11.9130 | lr=8.80e-05
+  [03:30:39] ep=5 step=3500/7516 loss=9.4361 | lr=8.93e-05
+  [03:31:07] ep=5 step=4000/7516 loss=7.7036 | lr=9.06e-05
+  [03:31:35] ep=5 step=4500/7516 loss=10.6821 | lr=9.20e-05
+  [03:32:02] ep=5 step=5000/7516 loss=11.6271 | lr=9.33e-05
+  [03:32:30] ep=5 step=5500/7516 loss=11.1191 | lr=9.46e-05
+  [03:32:57] ep=5 step=6000/7516 loss=10.5622 | lr=9.60e-05
+  [03:33:25] ep=5 step=6500/7516 loss=6.3554 | lr=9.73e-05
+  [03:33:53] ep=5 step=7000/7516 loss=7.5883 | lr=9.86e-05
+  [03:34:20] ep=5 step=7500/7516 loss=7.2964 | lr=1.00e-04
+[03:34:21] Epoch 5/70 | loss=9.5881 | lr=1.00e-04 | 6.9min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+[03:34:21] Backbone: TRAINABLE
+  [03:35:26] ep=6 step=500/7516 loss=12.2120 | lr=1.00e-04
+  [03:36:11] ep=6 step=1000/7516 loss=7.8230 | lr=1.00e-04
+  [03:36:55] ep=6 step=1500/7516 loss=6.9347 | lr=1.00e-04
+  [03:37:38] ep=6 step=2000/7516 loss=8.6879 | lr=1.00e-04
+  [03:38:22] ep=6 step=2500/7516 loss=11.4967 | lr=1.00e-04
+  [03:39:05] ep=6 step=3000/7516 loss=5.8380 | lr=1.00e-04
+  [03:39:48] ep=6 step=3500/7516 loss=10.1611 | lr=1.00e-04
+  [03:40:32] ep=6 step=4000/7516 loss=5.8036 | lr=1.00e-04
+  [03:41:15] ep=6 step=4500/7516 loss=5.6943 | lr=1.00e-04
+  [03:41:58] ep=6 step=5000/7516 loss=8.1203 | lr=1.00e-04
+  [03:42:40] ep=6 step=5500/7516 loss=7.0480 | lr=1.00e-04
+  [03:43:23] ep=6 step=6000/7516 loss=5.5650 | lr=1.00e-04
+  [03:44:06] ep=6 step=6500/7516 loss=5.1309 | lr=1.00e-04
+  [03:44:48] ep=6 step=7000/7516 loss=7.1030 | lr=9.99e-05
+  [03:45:31] ep=6 step=7500/7516 loss=6.7389 | lr=9.99e-05
+[03:45:33] Epoch 6/70 | loss=7.6926 | lr=9.99e-05 | 11.2min
+[03:46:11] Val mAP=0.0043 | mAP50=0.0130 | avg_preds=10.0 | max_score=0.9700
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.87it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.85it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:46:54] ep=7 step=500/7516 loss=7.1235 | lr=9.99e-05
+  [03:47:36] ep=7 step=1000/7516 loss=9.4692 | lr=9.99e-05
+  [03:48:19] ep=7 step=1500/7516 loss=6.0929 | lr=9.99e-05
+  [03:49:01] ep=7 step=2000/7516 loss=6.3543 | lr=9.99e-05
+  [03:49:44] ep=7 step=2500/7516 loss=7.9336 | lr=9.99e-05
+  [03:50:27] ep=7 step=3000/7516 loss=9.1935 | lr=9.99e-05
+  [03:51:10] ep=7 step=3500/7516 loss=8.1756 | lr=9.99e-05
+  [03:51:53] ep=7 step=4000/7516 loss=5.9877 | lr=9.99e-05
+  [03:52:35] ep=7 step=4500/7516 loss=7.2264 | lr=9.99e-05
+  [03:53:18] ep=7 step=5000/7516 loss=3.9326 | lr=9.98e-05
+  [03:54:01] ep=7 step=5500/7516 loss=5.3302 | lr=9.98e-05
+  [03:54:44] ep=7 step=6000/7516 loss=4.3286 | lr=9.98e-05
+  [03:55:26] ep=7 step=6500/7516 loss=5.3579 | lr=9.98e-05
+  [03:56:09] ep=7 step=7000/7516 loss=7.5811 | lr=9.98e-05
+  [03:56:51] ep=7 step=7500/7516 loss=5.6287 | lr=9.98e-05
+[03:56:53] Epoch 7/70 | loss=6.5513 | lr=9.98e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [03:57:36] ep=8 step=500/7516 loss=4.6797 | lr=9.98e-05
+  [03:58:19] ep=8 step=1000/7516 loss=3.0680 | lr=9.97e-05
+  [03:59:01] ep=8 step=1500/7516 loss=5.6750 | lr=9.97e-05
+  [03:59:44] ep=8 step=2000/7516 loss=8.0266 | lr=9.97e-05
+  [04:00:27] ep=8 step=2500/7516 loss=7.6435 | lr=9.97e-05
+  [04:01:09] ep=8 step=3000/7516 loss=8.4942 | lr=9.97e-05
+  [04:01:52] ep=8 step=3500/7516 loss=7.5795 | lr=9.96e-05
+  [04:02:34] ep=8 step=4000/7516 loss=5.2171 | lr=9.96e-05
+  [04:03:17] ep=8 step=4500/7516 loss=8.5923 | lr=9.96e-05
+  [04:04:00] ep=8 step=5000/7516 loss=4.0315 | lr=9.96e-05
+  [04:04:42] ep=8 step=5500/7516 loss=5.6450 | lr=9.96e-05
+  [04:05:25] ep=8 step=6000/7516 loss=3.8408 | lr=9.95e-05
+  [04:06:07] ep=8 step=6500/7516 loss=6.9969 | lr=9.95e-05
+  [04:06:50] ep=8 step=7000/7516 loss=6.1410 | lr=9.95e-05
+  [04:07:33] ep=8 step=7500/7516 loss=4.2353 | lr=9.95e-05
+[04:07:35] Epoch 8/70 | loss=6.0105 | lr=9.95e-05 | 10.7min
+[04:08:12] Val mAP=0.0294 | mAP50=0.0805 | avg_preds=10.0 | max_score=0.9838
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.93it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.91it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [04:08:56] ep=9 step=500/7516 loss=4.7378 | lr=9.95e-05
+  [04:09:38] ep=9 step=1000/7516 loss=5.0874 | lr=9.94e-05
+  [04:10:21] ep=9 step=1500/7516 loss=6.1131 | lr=9.94e-05
+  [04:11:04] ep=9 step=2000/7516 loss=3.1277 | lr=9.94e-05
+  [04:11:47] ep=9 step=2500/7516 loss=4.3708 | lr=9.94e-05
+  [04:12:29] ep=9 step=3000/7516 loss=7.1457 | lr=9.93e-05
+  [04:13:12] ep=9 step=3500/7516 loss=4.6488 | lr=9.93e-05
+  [04:13:55] ep=9 step=4000/7516 loss=6.7705 | lr=9.93e-05
+  [04:14:38] ep=9 step=4500/7516 loss=4.6254 | lr=9.92e-05
+  [04:15:20] ep=9 step=5000/7516 loss=4.1769 | lr=9.92e-05
+  [04:16:03] ep=9 step=5500/7516 loss=4.5863 | lr=9.92e-05
+  [04:16:45] ep=9 step=6000/7516 loss=5.8099 | lr=9.92e-05
+  [04:17:28] ep=9 step=6500/7516 loss=6.6220 | lr=9.91e-05
+  [04:18:11] ep=9 step=7000/7516 loss=5.7013 | lr=9.91e-05
+  [04:18:54] ep=9 step=7500/7516 loss=4.9344 | lr=9.91e-05
+[04:18:55] Epoch 9/70 | loss=5.6067 | lr=9.91e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [04:19:38] ep=10 step=500/7516 loss=4.6708 | lr=9.90e-05
+  [04:20:21] ep=10 step=1000/7516 loss=5.0781 | lr=9.90e-05
+  [04:21:03] ep=10 step=1500/7516 loss=8.2245 | lr=9.90e-05
+  [04:21:46] ep=10 step=2000/7516 loss=5.7998 | lr=9.89e-05
+  [04:22:29] ep=10 step=2500/7516 loss=6.9502 | lr=9.89e-05
+  [04:23:12] ep=10 step=3000/7516 loss=3.9141 | lr=9.89e-05
+  [04:23:54] ep=10 step=3500/7516 loss=7.4212 | lr=9.88e-05
+  [04:24:38] ep=10 step=4000/7516 loss=5.0497 | lr=9.88e-05
+/home/eclab314/miniconda3/envs/314706009/lib/python3.10/site-packages/albumentations/augmentations/dropout/functional.py:559: RuntimeWarning: invalid value encountered in divide
+  visibility_ratios = remaining_areas / box_areas
+  [04:25:20] ep=10 step=4500/7516 loss=4.5234 | lr=9.88e-05
+  [04:26:03] ep=10 step=5000/7516 loss=4.8646 | lr=9.87e-05
+  [04:26:46] ep=10 step=5500/7516 loss=10.2690 | lr=9.87e-05
+  [04:27:28] ep=10 step=6000/7516 loss=4.4980 | lr=9.87e-05
+  [04:28:11] ep=10 step=6500/7516 loss=5.6505 | lr=9.86e-05
+  [04:28:54] ep=10 step=7000/7516 loss=7.0643 | lr=9.86e-05
+  [04:29:37] ep=10 step=7500/7516 loss=4.7298 | lr=9.85e-05
+[04:29:38] Epoch 10/70 | loss=5.3930 | lr=9.85e-05 | 10.7min
+[04:30:16] Val mAP=0.0959 | mAP50=0.1970 | avg_preds=10.0 | max_score=0.9895
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.66it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_10
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.37it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.35it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [04:30:59] ep=11 step=500/7516 loss=6.3468 | lr=9.85e-05
+  [04:31:42] ep=11 step=1000/7516 loss=4.1937 | lr=9.85e-05
+  [04:32:25] ep=11 step=1500/7516 loss=6.0917 | lr=9.84e-05
+  [04:33:08] ep=11 step=2000/7516 loss=3.9440 | lr=9.84e-05
+  [04:33:51] ep=11 step=2500/7516 loss=3.6141 | lr=9.83e-05
+  [04:34:34] ep=11 step=3000/7516 loss=2.8056 | lr=9.83e-05
+  [04:35:17] ep=11 step=3500/7516 loss=3.8063 | lr=9.83e-05
+  [04:35:59] ep=11 step=4000/7516 loss=4.8837 | lr=9.82e-05
+  [04:36:42] ep=11 step=4500/7516 loss=4.5682 | lr=9.82e-05
+  [04:37:25] ep=11 step=5000/7516 loss=3.9484 | lr=9.81e-05
+  [04:38:08] ep=11 step=5500/7516 loss=5.3450 | lr=9.81e-05
+  [04:38:50] ep=11 step=6000/7516 loss=3.0069 | lr=9.80e-05
+  [04:39:33] ep=11 step=6500/7516 loss=3.3970 | lr=9.80e-05
+  [04:40:16] ep=11 step=7000/7516 loss=3.4578 | lr=9.80e-05
+  [04:40:58] ep=11 step=7500/7516 loss=2.9570 | lr=9.79e-05
+[04:41:00] Epoch 11/70 | loss=5.2172 | lr=9.79e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [04:41:43] ep=12 step=500/7516 loss=5.1349 | lr=9.79e-05
+  [04:42:25] ep=12 step=1000/7516 loss=4.5158 | lr=9.78e-05
+  [04:43:08] ep=12 step=1500/7516 loss=3.2641 | lr=9.78e-05
+  [04:43:51] ep=12 step=2000/7516 loss=4.1378 | lr=9.77e-05
+  [04:44:34] ep=12 step=2500/7516 loss=4.3791 | lr=9.77e-05
+  [04:45:16] ep=12 step=3000/7516 loss=3.0279 | lr=9.76e-05
+  [04:45:59] ep=12 step=3500/7516 loss=3.5049 | lr=9.76e-05
+  [04:46:41] ep=12 step=4000/7516 loss=5.8048 | lr=9.75e-05
+  [04:47:24] ep=12 step=4500/7516 loss=4.3421 | lr=9.75e-05
+  [04:48:07] ep=12 step=5000/7516 loss=3.6920 | lr=9.74e-05
+  [04:48:49] ep=12 step=5500/7516 loss=4.7319 | lr=9.74e-05
+  [04:49:32] ep=12 step=6000/7516 loss=4.0814 | lr=9.73e-05
+  [04:50:15] ep=12 step=6500/7516 loss=7.0769 | lr=9.73e-05
+  [04:50:57] ep=12 step=7000/7516 loss=7.9104 | lr=9.72e-05
+  [04:51:40] ep=12 step=7500/7516 loss=4.8984 | lr=9.72e-05
+[04:51:41] Epoch 12/70 | loss=5.0788 | lr=9.72e-05 | 10.7min
+[04:52:19] Val mAP=0.1315 | mAP50=0.2681 | avg_preds=10.0 | max_score=0.9892
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.36it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.34it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [04:53:02] ep=13 step=500/7516 loss=4.1954 | lr=9.71e-05
+  [04:53:45] ep=13 step=1000/7516 loss=4.0524 | lr=9.71e-05
+  [04:54:28] ep=13 step=1500/7516 loss=8.7197 | lr=9.70e-05
+  [04:55:10] ep=13 step=2000/7516 loss=3.4494 | lr=9.69e-05
+  [04:55:53] ep=13 step=2500/7516 loss=4.0745 | lr=9.69e-05
+  [04:56:36] ep=13 step=3000/7516 loss=4.0779 | lr=9.68e-05
+  [04:57:18] ep=13 step=3500/7516 loss=6.8376 | lr=9.68e-05
+  [04:58:00] ep=13 step=4000/7516 loss=5.5713 | lr=9.67e-05
+  [04:58:43] ep=13 step=4500/7516 loss=3.0117 | lr=9.67e-05
+  [04:59:26] ep=13 step=5000/7516 loss=3.4026 | lr=9.66e-05
+  [05:00:09] ep=13 step=5500/7516 loss=6.3452 | lr=9.65e-05
+  [05:00:51] ep=13 step=6000/7516 loss=5.9614 | lr=9.65e-05
+  [05:01:34] ep=13 step=6500/7516 loss=3.6144 | lr=9.64e-05
+  [05:02:17] ep=13 step=7000/7516 loss=8.4084 | lr=9.64e-05
+  [05:03:00] ep=13 step=7500/7516 loss=5.0475 | lr=9.63e-05
+[05:03:01] Epoch 13/70 | loss=4.9559 | lr=9.63e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:03:45] ep=14 step=500/7516 loss=6.9718 | lr=9.62e-05
+  [05:04:27] ep=14 step=1000/7516 loss=3.5030 | lr=9.62e-05
+  [05:05:10] ep=14 step=1500/7516 loss=6.4723 | lr=9.61e-05
+  [05:05:53] ep=14 step=2000/7516 loss=5.0368 | lr=9.61e-05
+  [05:06:35] ep=14 step=2500/7516 loss=2.8621 | lr=9.60e-05
+  [05:07:18] ep=14 step=3000/7516 loss=4.5729 | lr=9.59e-05
+  [05:08:00] ep=14 step=3500/7516 loss=8.1797 | lr=9.59e-05
+  [05:08:43] ep=14 step=4000/7516 loss=4.5316 | lr=9.58e-05
+  [05:09:26] ep=14 step=4500/7516 loss=4.3041 | lr=9.57e-05
+  [05:10:08] ep=14 step=5000/7516 loss=4.5772 | lr=9.57e-05
+  [05:10:51] ep=14 step=5500/7516 loss=5.8530 | lr=9.56e-05
+  [05:11:34] ep=14 step=6000/7516 loss=3.8781 | lr=9.55e-05
+  [05:12:16] ep=14 step=6500/7516 loss=3.7783 | lr=9.55e-05
+/home/eclab314/miniconda3/envs/314706009/lib/python3.10/site-packages/albumentations/augmentations/dropout/functional.py:559: RuntimeWarning: invalid value encountered in divide
+  visibility_ratios = remaining_areas / box_areas
+  [05:12:59] ep=14 step=7000/7516 loss=3.0547 | lr=9.54e-05
+  [05:13:41] ep=14 step=7500/7516 loss=7.2598 | lr=9.53e-05
+[05:13:43] Epoch 14/70 | loss=4.8448 | lr=9.53e-05 | 10.7min
+[05:14:21] Val mAP=0.2054 | mAP50=0.4236 | avg_preds=10.0 | max_score=0.9925
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.94it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.92it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:15:04] ep=15 step=500/7516 loss=4.9537 | lr=9.53e-05
+  [05:15:46] ep=15 step=1000/7516 loss=4.5253 | lr=9.52e-05
+  [05:16:29] ep=15 step=1500/7516 loss=6.8769 | lr=9.51e-05
+  [05:17:12] ep=15 step=2000/7516 loss=3.1551 | lr=9.51e-05
+  [05:17:54] ep=15 step=2500/7516 loss=4.6258 | lr=9.50e-05
+  [05:18:37] ep=15 step=3000/7516 loss=3.9390 | lr=9.49e-05
+  [05:19:20] ep=15 step=3500/7516 loss=5.3389 | lr=9.49e-05
+  [05:20:02] ep=15 step=4000/7516 loss=9.7907 | lr=9.48e-05
+  [05:20:45] ep=15 step=4500/7516 loss=5.3566 | lr=9.47e-05
+  [05:21:27] ep=15 step=5000/7516 loss=5.4071 | lr=9.46e-05
+  [05:22:10] ep=15 step=5500/7516 loss=2.8587 | lr=9.46e-05
+  [05:22:53] ep=15 step=6000/7516 loss=7.5260 | lr=9.45e-05
+  [05:23:35] ep=15 step=6500/7516 loss=4.2200 | lr=9.44e-05
+  [05:24:18] ep=15 step=7000/7516 loss=5.6239 | lr=9.44e-05
+  [05:25:00] ep=15 step=7500/7516 loss=4.7603 | lr=9.43e-05
+[05:25:02] Epoch 15/70 | loss=4.8162 | lr=9.43e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:25:45] ep=16 step=500/7516 loss=2.9055 | lr=9.42e-05
+  [05:26:27] ep=16 step=1000/7516 loss=3.3610 | lr=9.41e-05
+  [05:27:10] ep=16 step=1500/7516 loss=4.3069 | lr=9.40e-05
+  [05:27:52] ep=16 step=2000/7516 loss=3.1884 | lr=9.40e-05
+  [05:28:34] ep=16 step=2500/7516 loss=4.2200 | lr=9.39e-05
+  [05:29:17] ep=16 step=3000/7516 loss=3.8602 | lr=9.38e-05
+  [05:30:00] ep=16 step=3500/7516 loss=8.5375 | lr=9.37e-05
+  [05:30:42] ep=16 step=4000/7516 loss=3.3556 | lr=9.37e-05
+  [05:31:25] ep=16 step=4500/7516 loss=4.4725 | lr=9.36e-05
+  [05:32:07] ep=16 step=5000/7516 loss=4.8124 | lr=9.35e-05
+  [05:32:50] ep=16 step=5500/7516 loss=6.7568 | lr=9.34e-05
+  [05:33:32] ep=16 step=6000/7516 loss=4.1409 | lr=9.33e-05
+  [05:34:15] ep=16 step=6500/7516 loss=3.8192 | lr=9.33e-05
+  [05:34:57] ep=16 step=7000/7516 loss=3.5234 | lr=9.32e-05
+  [05:35:40] ep=16 step=7500/7516 loss=8.0505 | lr=9.31e-05
+[05:35:41] Epoch 16/70 | loss=4.7197 | lr=9.31e-05 | 10.7min
+[05:36:19] Val mAP=0.1981 | mAP50=0.4008 | avg_preds=10.0 | max_score=0.9929
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:37:02] ep=17 step=500/7516 loss=3.7640 | lr=9.30e-05
+  [05:37:45] ep=17 step=1000/7516 loss=3.8059 | lr=9.29e-05
+  [05:38:28] ep=17 step=1500/7516 loss=4.2006 | lr=9.29e-05
+  [05:39:10] ep=17 step=2000/7516 loss=3.9426 | lr=9.28e-05
+  [05:39:53] ep=17 step=2500/7516 loss=3.6811 | lr=9.27e-05
+  [05:40:35] ep=17 step=3000/7516 loss=7.9091 | lr=9.26e-05
+  [05:41:17] ep=17 step=3500/7516 loss=3.5080 | lr=9.25e-05
+  [05:42:00] ep=17 step=4000/7516 loss=7.6190 | lr=9.24e-05
+  [05:42:42] ep=17 step=4500/7516 loss=3.9004 | lr=9.23e-05
+  [05:43:25] ep=17 step=5000/7516 loss=6.3819 | lr=9.23e-05
+  [05:44:07] ep=17 step=5500/7516 loss=9.7866 | lr=9.22e-05
+  [05:44:50] ep=17 step=6000/7516 loss=2.9842 | lr=9.21e-05
+  [05:45:33] ep=17 step=6500/7516 loss=4.2739 | lr=9.20e-05
+  [05:46:16] ep=17 step=7000/7516 loss=3.0631 | lr=9.19e-05
+  [05:46:58] ep=17 step=7500/7516 loss=5.4294 | lr=9.18e-05
+[05:47:00] Epoch 17/70 | loss=4.6236 | lr=9.18e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:47:43] ep=18 step=500/7516 loss=6.2514 | lr=9.17e-05
+  [05:48:25] ep=18 step=1000/7516 loss=3.4994 | lr=9.16e-05
+  [05:49:08] ep=18 step=1500/7516 loss=3.4955 | lr=9.16e-05
+  [05:49:51] ep=18 step=2000/7516 loss=4.7487 | lr=9.15e-05
+  [05:50:33] ep=18 step=2500/7516 loss=6.0153 | lr=9.14e-05
+  [05:51:15] ep=18 step=3000/7516 loss=3.2927 | lr=9.13e-05
+  [05:51:58] ep=18 step=3500/7516 loss=3.8743 | lr=9.12e-05
+  [05:52:40] ep=18 step=4000/7516 loss=4.4461 | lr=9.11e-05
+  [05:53:23] ep=18 step=4500/7516 loss=5.5757 | lr=9.10e-05
+  [05:54:05] ep=18 step=5000/7516 loss=3.3617 | lr=9.09e-05
+  [05:54:48] ep=18 step=5500/7516 loss=7.6561 | lr=9.08e-05
+  [05:55:31] ep=18 step=6000/7516 loss=3.4790 | lr=9.07e-05
+  [05:56:13] ep=18 step=6500/7516 loss=4.1390 | lr=9.06e-05
+  [05:56:56] ep=18 step=7000/7516 loss=3.6479 | lr=9.05e-05
+  [05:57:38] ep=18 step=7500/7516 loss=2.9722 | lr=9.05e-05
+[05:57:39] Epoch 18/70 | loss=4.5481 | lr=9.05e-05 | 10.7min
+[05:58:17] Val mAP=0.1979 | mAP50=0.3936 | avg_preds=10.0 | max_score=0.9928
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [05:59:01] ep=19 step=500/7516 loss=3.3203 | lr=9.04e-05
+  [05:59:43] ep=19 step=1000/7516 loss=4.3147 | lr=9.03e-05
+  [06:00:26] ep=19 step=1500/7516 loss=2.5005 | lr=9.02e-05
+  [06:01:08] ep=19 step=2000/7516 loss=3.9592 | lr=9.01e-05
+  [06:01:51] ep=19 step=2500/7516 loss=3.6154 | lr=9.00e-05
+  [06:02:34] ep=19 step=3000/7516 loss=3.6892 | lr=8.99e-05
+  [06:03:17] ep=19 step=3500/7516 loss=4.8113 | lr=8.98e-05
+  [06:03:59] ep=19 step=4000/7516 loss=5.2077 | lr=8.97e-05
+  [06:04:42] ep=19 step=4500/7516 loss=6.6882 | lr=8.96e-05
+  [06:05:25] ep=19 step=5000/7516 loss=3.0262 | lr=8.95e-05
+  [06:06:07] ep=19 step=5500/7516 loss=2.7817 | lr=8.94e-05
+  [06:06:51] ep=19 step=6000/7516 loss=3.8515 | lr=8.93e-05
+  [06:07:33] ep=19 step=6500/7516 loss=4.1572 | lr=8.92e-05
+  [06:08:16] ep=19 step=7000/7516 loss=3.6278 | lr=8.91e-05
+  [06:08:59] ep=19 step=7500/7516 loss=3.7184 | lr=8.90e-05
+[06:09:00] Epoch 19/70 | loss=4.5330 | lr=8.90e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [06:09:43] ep=20 step=500/7516 loss=3.1964 | lr=8.89e-05
+  [06:10:26] ep=20 step=1000/7516 loss=4.2150 | lr=8.88e-05
+  [06:11:09] ep=20 step=1500/7516 loss=3.2439 | lr=8.87e-05
+  [06:11:51] ep=20 step=2000/7516 loss=8.8170 | lr=8.86e-05
+  [06:12:34] ep=20 step=2500/7516 loss=3.8769 | lr=8.85e-05
+  [06:13:16] ep=20 step=3000/7516 loss=5.4293 | lr=8.84e-05
+  [06:13:59] ep=20 step=3500/7516 loss=3.7602 | lr=8.83e-05
+  [06:14:41] ep=20 step=4000/7516 loss=5.7032 | lr=8.82e-05
+  [06:15:24] ep=20 step=4500/7516 loss=4.0135 | lr=8.81e-05
+  [06:16:06] ep=20 step=5000/7516 loss=4.9102 | lr=8.80e-05
+  [06:16:49] ep=20 step=5500/7516 loss=4.3387 | lr=8.79e-05
+  [06:17:31] ep=20 step=6000/7516 loss=3.5883 | lr=8.77e-05
+  [06:18:14] ep=20 step=6500/7516 loss=2.9241 | lr=8.76e-05
+  [06:18:57] ep=20 step=7000/7516 loss=3.3548 | lr=8.75e-05
+  [06:19:40] ep=20 step=7500/7516 loss=4.3220 | lr=8.74e-05
+[06:19:41] Epoch 20/70 | loss=4.4342 | lr=8.74e-05 | 10.7min
+[06:20:19] Val mAP=0.1944 | mAP50=0.3899 | avg_preds=10.0 | max_score=0.9935
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.59it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_20
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [06:21:02] ep=21 step=500/7516 loss=5.9755 | lr=8.73e-05
+  [06:21:45] ep=21 step=1000/7516 loss=3.6590 | lr=8.72e-05
+  [06:22:28] ep=21 step=1500/7516 loss=5.1576 | lr=8.71e-05
+  [06:23:11] ep=21 step=2000/7516 loss=5.8885 | lr=8.70e-05
+  [06:23:53] ep=21 step=2500/7516 loss=2.7831 | lr=8.69e-05
+  [06:24:36] ep=21 step=3000/7516 loss=3.2945 | lr=8.68e-05
+  [06:25:18] ep=21 step=3500/7516 loss=2.7116 | lr=8.67e-05
+  [06:26:01] ep=21 step=4000/7516 loss=3.1923 | lr=8.66e-05
+  [06:26:43] ep=21 step=4500/7516 loss=2.9446 | lr=8.65e-05
+  [06:27:26] ep=21 step=5000/7516 loss=3.8429 | lr=8.63e-05
+  [06:28:09] ep=21 step=5500/7516 loss=6.0877 | lr=8.62e-05
+  [06:28:51] ep=21 step=6000/7516 loss=4.0467 | lr=8.61e-05
+  [06:29:34] ep=21 step=6500/7516 loss=4.1331 | lr=8.60e-05
+  [06:30:17] ep=21 step=7000/7516 loss=3.1959 | lr=8.59e-05
+  [06:30:59] ep=21 step=7500/7516 loss=4.7720 | lr=8.58e-05
+[06:31:01] Epoch 21/70 | loss=4.4074 | lr=8.58e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [06:31:44] ep=22 step=500/7516 loss=4.1092 | lr=8.57e-05
+  [06:32:26] ep=22 step=1000/7516 loss=2.7662 | lr=8.56e-05
+  [06:33:09] ep=22 step=1500/7516 loss=4.3137 | lr=8.54e-05
+  [06:33:52] ep=22 step=2000/7516 loss=2.6748 | lr=8.53e-05
+  [06:34:34] ep=22 step=2500/7516 loss=2.8470 | lr=8.52e-05
+  [06:35:17] ep=22 step=3000/7516 loss=3.5144 | lr=8.51e-05
+  [06:35:59] ep=22 step=3500/7516 loss=4.2214 | lr=8.50e-05
+  [06:36:42] ep=22 step=4000/7516 loss=6.4849 | lr=8.49e-05
+  [06:37:25] ep=22 step=4500/7516 loss=5.7040 | lr=8.48e-05
+  [06:38:07] ep=22 step=5000/7516 loss=2.9157 | lr=8.46e-05
+  [06:38:50] ep=22 step=5500/7516 loss=4.2513 | lr=8.45e-05
+  [06:39:33] ep=22 step=6000/7516 loss=3.8048 | lr=8.44e-05
+  [06:40:15] ep=22 step=6500/7516 loss=7.3326 | lr=8.43e-05
+  [06:40:57] ep=22 step=7000/7516 loss=3.5311 | lr=8.42e-05
+  [06:41:40] ep=22 step=7500/7516 loss=6.5774 | lr=8.41e-05
+[06:41:41] Epoch 22/70 | loss=4.3256 | lr=8.41e-05 | 10.7min
+[06:42:19] Val mAP=0.1983 | mAP50=0.3933 | avg_preds=10.0 | max_score=0.9932
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [06:43:02] ep=23 step=500/7516 loss=4.8829 | lr=8.39e-05
+  [06:43:45] ep=23 step=1000/7516 loss=4.6862 | lr=8.38e-05
+  [06:44:28] ep=23 step=1500/7516 loss=4.4480 | lr=8.37e-05
+  [06:45:11] ep=23 step=2000/7516 loss=3.0299 | lr=8.36e-05
+  [06:45:53] ep=23 step=2500/7516 loss=2.6235 | lr=8.35e-05
+  [06:46:36] ep=23 step=3000/7516 loss=4.9612 | lr=8.33e-05
+  [06:47:18] ep=23 step=3500/7516 loss=5.0029 | lr=8.32e-05
+  [06:48:01] ep=23 step=4000/7516 loss=4.9332 | lr=8.31e-05
+  [06:48:44] ep=23 step=4500/7516 loss=3.4862 | lr=8.30e-05
+  [06:49:26] ep=23 step=5000/7516 loss=2.8257 | lr=8.29e-05
+  [06:50:09] ep=23 step=5500/7516 loss=2.5673 | lr=8.27e-05
+  [06:50:52] ep=23 step=6000/7516 loss=3.6936 | lr=8.26e-05
+  [06:51:34] ep=23 step=6500/7516 loss=2.5638 | lr=8.25e-05
+  [06:52:17] ep=23 step=7000/7516 loss=3.3058 | lr=8.24e-05
+  [06:53:00] ep=23 step=7500/7516 loss=4.7114 | lr=8.22e-05
+[06:53:02] Epoch 23/70 | loss=4.2775 | lr=8.22e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [06:53:44] ep=24 step=500/7516 loss=3.5852 | lr=8.21e-05
+  [06:54:27] ep=24 step=1000/7516 loss=5.0488 | lr=8.20e-05
+  [06:55:10] ep=24 step=1500/7516 loss=3.8079 | lr=8.19e-05
+  [06:55:52] ep=24 step=2000/7516 loss=4.7018 | lr=8.17e-05
+  [06:56:35] ep=24 step=2500/7516 loss=5.3076 | lr=8.16e-05
+  [06:57:17] ep=24 step=3000/7516 loss=7.0252 | lr=8.15e-05
+  [06:58:00] ep=24 step=3500/7516 loss=3.3393 | lr=8.14e-05
+  [06:58:43] ep=24 step=4000/7516 loss=3.0329 | lr=8.12e-05
+  [06:59:25] ep=24 step=4500/7516 loss=5.0950 | lr=8.11e-05
+  [07:00:08] ep=24 step=5000/7516 loss=3.2688 | lr=8.10e-05
+  [07:00:50] ep=24 step=5500/7516 loss=3.3575 | lr=8.09e-05
+  [07:01:33] ep=24 step=6000/7516 loss=3.1480 | lr=8.07e-05
+  [07:02:16] ep=24 step=6500/7516 loss=2.7336 | lr=8.06e-05
+  [07:02:59] ep=24 step=7000/7516 loss=3.1229 | lr=8.05e-05
+  [07:03:41] ep=24 step=7500/7516 loss=5.8585 | lr=8.04e-05
+[07:03:43] Epoch 24/70 | loss=4.2299 | lr=8.04e-05 | 10.7min
+[07:04:21] Val mAP=0.2164 | mAP50=0.4224 | avg_preds=10.0 | max_score=0.9943
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.37it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.35it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:05:03] ep=25 step=500/7516 loss=5.8000 | lr=8.02e-05
+  [07:05:46] ep=25 step=1000/7516 loss=3.2390 | lr=8.01e-05
+  [07:06:29] ep=25 step=1500/7516 loss=5.3372 | lr=8.00e-05
+  [07:07:12] ep=25 step=2000/7516 loss=2.8179 | lr=7.98e-05
+  [07:07:54] ep=25 step=2500/7516 loss=4.1161 | lr=7.97e-05
+  [07:08:37] ep=25 step=3000/7516 loss=4.4942 | lr=7.96e-05
+  [07:09:20] ep=25 step=3500/7516 loss=2.3311 | lr=7.95e-05
+  [07:10:03] ep=25 step=4000/7516 loss=3.2071 | lr=7.93e-05
+  [07:10:45] ep=25 step=4500/7516 loss=4.3471 | lr=7.92e-05
+  [07:11:28] ep=25 step=5000/7516 loss=3.2655 | lr=7.91e-05
+  [07:12:10] ep=25 step=5500/7516 loss=4.5230 | lr=7.89e-05
+  [07:12:53] ep=25 step=6000/7516 loss=4.3935 | lr=7.88e-05
+  [07:13:36] ep=25 step=6500/7516 loss=3.7403 | lr=7.87e-05
+  [07:14:19] ep=25 step=7000/7516 loss=4.6124 | lr=7.85e-05
+  [07:15:01] ep=25 step=7500/7516 loss=5.6337 | lr=7.84e-05
+[07:15:03] Epoch 25/70 | loss=4.1459 | lr=7.84e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:15:46] ep=26 step=500/7516 loss=6.4203 | lr=7.83e-05
+  [07:16:28] ep=26 step=1000/7516 loss=3.5566 | lr=7.81e-05
+  [07:17:11] ep=26 step=1500/7516 loss=6.4078 | lr=7.80e-05
+  [07:17:53] ep=26 step=2000/7516 loss=5.0484 | lr=7.79e-05
+  [07:18:36] ep=26 step=2500/7516 loss=2.8045 | lr=7.77e-05
+  [07:19:19] ep=26 step=3000/7516 loss=6.6837 | lr=7.76e-05
+  [07:20:01] ep=26 step=3500/7516 loss=3.4314 | lr=7.75e-05
+  [07:20:43] ep=26 step=4000/7516 loss=5.3756 | lr=7.73e-05
+  [07:21:26] ep=26 step=4500/7516 loss=4.4813 | lr=7.72e-05
+  [07:22:09] ep=26 step=5000/7516 loss=3.0985 | lr=7.71e-05
+  [07:22:52] ep=26 step=5500/7516 loss=2.7939 | lr=7.69e-05
+  [07:23:35] ep=26 step=6000/7516 loss=3.4360 | lr=7.68e-05
+  [07:24:17] ep=26 step=6500/7516 loss=5.4417 | lr=7.67e-05
+  [07:25:00] ep=26 step=7000/7516 loss=4.3120 | lr=7.65e-05
+  [07:25:42] ep=26 step=7500/7516 loss=4.6418 | lr=7.64e-05
+[07:25:44] Epoch 26/70 | loss=4.0984 | lr=7.64e-05 | 10.7min
+[07:26:22] Val mAP=0.2318 | mAP50=0.4495 | avg_preds=10.0 | max_score=0.9921
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.06it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.04it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:27:05] ep=27 step=500/7516 loss=4.9465 | lr=7.62e-05
+  [07:27:48] ep=27 step=1000/7516 loss=5.7114 | lr=7.61e-05
+  [07:28:31] ep=27 step=1500/7516 loss=2.5776 | lr=7.60e-05
+  [07:29:14] ep=27 step=2000/7516 loss=4.2476 | lr=7.58e-05
+  [07:29:56] ep=27 step=2500/7516 loss=4.5727 | lr=7.57e-05
+  [07:30:39] ep=27 step=3000/7516 loss=2.7527 | lr=7.56e-05
+  [07:31:22] ep=27 step=3500/7516 loss=9.3218 | lr=7.54e-05
+  [07:32:04] ep=27 step=4000/7516 loss=2.3598 | lr=7.53e-05
+  [07:32:47] ep=27 step=4500/7516 loss=4.5586 | lr=7.51e-05
+  [07:33:29] ep=27 step=5000/7516 loss=3.2938 | lr=7.50e-05
+  [07:34:12] ep=27 step=5500/7516 loss=4.3054 | lr=7.49e-05
+  [07:34:55] ep=27 step=6000/7516 loss=4.1934 | lr=7.47e-05
+  [07:35:38] ep=27 step=6500/7516 loss=4.6490 | lr=7.46e-05
+  [07:36:20] ep=27 step=7000/7516 loss=3.4639 | lr=7.44e-05
+  [07:37:03] ep=27 step=7500/7516 loss=3.8265 | lr=7.43e-05
+[07:37:04] Epoch 27/70 | loss=4.1005 | lr=7.43e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:37:47] ep=28 step=500/7516 loss=4.9852 | lr=7.42e-05
+  [07:38:30] ep=28 step=1000/7516 loss=4.6211 | lr=7.40e-05
+  [07:39:12] ep=28 step=1500/7516 loss=2.8014 | lr=7.39e-05
+  [07:39:55] ep=28 step=2000/7516 loss=5.8391 | lr=7.37e-05
+  [07:40:38] ep=28 step=2500/7516 loss=4.4403 | lr=7.36e-05
+  [07:41:20] ep=28 step=3000/7516 loss=5.2731 | lr=7.35e-05
+  [07:42:03] ep=28 step=3500/7516 loss=6.2162 | lr=7.33e-05
+  [07:42:46] ep=28 step=4000/7516 loss=3.5422 | lr=7.32e-05
+  [07:43:29] ep=28 step=4500/7516 loss=5.0967 | lr=7.30e-05
+  [07:44:11] ep=28 step=5000/7516 loss=2.7919 | lr=7.29e-05
+  [07:44:54] ep=28 step=5500/7516 loss=2.8451 | lr=7.27e-05
+  [07:45:36] ep=28 step=6000/7516 loss=3.9936 | lr=7.26e-05
+  [07:46:19] ep=28 step=6500/7516 loss=3.5038 | lr=7.25e-05
+  [07:47:02] ep=28 step=7000/7516 loss=3.0147 | lr=7.23e-05
+  [07:47:44] ep=28 step=7500/7516 loss=2.2277 | lr=7.22e-05
+[07:47:46] Epoch 28/70 | loss=4.0427 | lr=7.22e-05 | 10.7min
+[07:48:24] Val mAP=0.3059 | mAP50=0.5854 | avg_preds=10.0 | max_score=0.9932
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.00it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.98it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:49:07] ep=29 step=500/7516 loss=3.5262 | lr=7.20e-05
+  [07:49:50] ep=29 step=1000/7516 loss=5.5099 | lr=7.19e-05
+  [07:50:32] ep=29 step=1500/7516 loss=2.4461 | lr=7.17e-05
+  [07:51:15] ep=29 step=2000/7516 loss=5.7830 | lr=7.16e-05
+  [07:51:58] ep=29 step=2500/7516 loss=9.6419 | lr=7.14e-05
+  [07:52:40] ep=29 step=3000/7516 loss=4.8890 | lr=7.13e-05
+  [07:53:23] ep=29 step=3500/7516 loss=4.1374 | lr=7.11e-05
+  [07:54:05] ep=29 step=4000/7516 loss=4.3014 | lr=7.10e-05
+  [07:54:48] ep=29 step=4500/7516 loss=5.0219 | lr=7.09e-05
+  [07:55:31] ep=29 step=5000/7516 loss=3.8428 | lr=7.07e-05
+  [07:56:14] ep=29 step=5500/7516 loss=3.0684 | lr=7.06e-05
+  [07:56:56] ep=29 step=6000/7516 loss=3.2915 | lr=7.04e-05
+  [07:57:39] ep=29 step=6500/7516 loss=4.5496 | lr=7.03e-05
+  [07:58:22] ep=29 step=7000/7516 loss=2.9897 | lr=7.01e-05
+  [07:59:05] ep=29 step=7500/7516 loss=3.2028 | lr=7.00e-05
+[07:59:06] Epoch 29/70 | loss=3.9918 | lr=7.00e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [07:59:49] ep=30 step=500/7516 loss=2.9331 | lr=6.98e-05
+  [08:00:31] ep=30 step=1000/7516 loss=2.6600 | lr=6.97e-05
+  [08:01:14] ep=30 step=1500/7516 loss=3.1779 | lr=6.95e-05
+  [08:01:57] ep=30 step=2000/7516 loss=3.9328 | lr=6.94e-05
+  [08:02:39] ep=30 step=2500/7516 loss=4.3948 | lr=6.92e-05
+  [08:03:21] ep=30 step=3000/7516 loss=5.7048 | lr=6.91e-05
+  [08:04:04] ep=30 step=3500/7516 loss=2.8900 | lr=6.89e-05
+  [08:04:46] ep=30 step=4000/7516 loss=2.5744 | lr=6.88e-05
+  [08:05:29] ep=30 step=4500/7516 loss=2.8960 | lr=6.86e-05
+  [08:06:12] ep=30 step=5000/7516 loss=4.3379 | lr=6.85e-05
+  [08:06:55] ep=30 step=5500/7516 loss=2.6407 | lr=6.83e-05
+  [08:07:38] ep=30 step=6000/7516 loss=4.7917 | lr=6.82e-05
+  [08:08:20] ep=30 step=6500/7516 loss=2.6834 | lr=6.80e-05
+  [08:09:03] ep=30 step=7000/7516 loss=3.4047 | lr=6.79e-05
+  [08:09:45] ep=30 step=7500/7516 loss=3.5618 | lr=6.77e-05
+[08:09:47] Epoch 30/70 | loss=3.9434 | lr=6.77e-05 | 10.7min
+[08:10:25] Val mAP=0.3596 | mAP50=0.6855 | avg_preds=10.0 | max_score=0.9928
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.83it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_30
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.02it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.00it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [08:11:08] ep=31 step=500/7516 loss=2.7125 | lr=6.76e-05
+  [08:11:51] ep=31 step=1000/7516 loss=3.8076 | lr=6.74e-05
+  [08:12:33] ep=31 step=1500/7516 loss=3.3653 | lr=6.73e-05
+  [08:13:16] ep=31 step=2000/7516 loss=3.6832 | lr=6.71e-05
+  [08:13:59] ep=31 step=2500/7516 loss=2.5952 | lr=6.70e-05
+  [08:14:42] ep=31 step=3000/7516 loss=4.7276 | lr=6.68e-05
+  [08:15:24] ep=31 step=3500/7516 loss=2.5323 | lr=6.67e-05
+  [08:16:07] ep=31 step=4000/7516 loss=3.4717 | lr=6.65e-05
+  [08:16:50] ep=31 step=4500/7516 loss=3.7830 | lr=6.64e-05
+  [08:17:33] ep=31 step=5000/7516 loss=2.9038 | lr=6.62e-05
+  [08:18:15] ep=31 step=5500/7516 loss=5.2130 | lr=6.61e-05
+  [08:18:58] ep=31 step=6000/7516 loss=2.8603 | lr=6.59e-05
+  [08:19:41] ep=31 step=6500/7516 loss=5.5090 | lr=6.58e-05
+  [08:20:24] ep=31 step=7000/7516 loss=2.7902 | lr=6.56e-05
+  [08:21:07] ep=31 step=7500/7516 loss=3.1623 | lr=6.55e-05
+[08:21:08] Epoch 31/70 | loss=3.8843 | lr=6.55e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [08:21:51] ep=32 step=500/7516 loss=2.9944 | lr=6.53e-05
+  [08:22:34] ep=32 step=1000/7516 loss=2.7745 | lr=6.51e-05
+  [08:23:16] ep=32 step=1500/7516 loss=3.6694 | lr=6.50e-05
+  [08:23:59] ep=32 step=2000/7516 loss=4.9236 | lr=6.48e-05
+  [08:24:42] ep=32 step=2500/7516 loss=2.4349 | lr=6.47e-05
+  [08:25:25] ep=32 step=3000/7516 loss=3.0326 | lr=6.45e-05
+  [08:26:07] ep=32 step=3500/7516 loss=2.6694 | lr=6.44e-05
+  [08:26:50] ep=32 step=4000/7516 loss=5.4086 | lr=6.42e-05
+  [08:27:33] ep=32 step=4500/7516 loss=4.2521 | lr=6.41e-05
+  [08:28:15] ep=32 step=5000/7516 loss=3.8989 | lr=6.39e-05
+  [08:28:58] ep=32 step=5500/7516 loss=4.0507 | lr=6.38e-05
+  [08:29:41] ep=32 step=6000/7516 loss=2.8421 | lr=6.36e-05
+  [08:30:24] ep=32 step=6500/7516 loss=2.4761 | lr=6.35e-05
+  [08:31:06] ep=32 step=7000/7516 loss=3.2867 | lr=6.33e-05
+  [08:31:49] ep=32 step=7500/7516 loss=2.9735 | lr=6.31e-05
+[08:31:50] Epoch 32/70 | loss=3.8311 | lr=6.31e-05 | 10.7min
+[08:32:28] Val mAP=0.3859 | mAP50=0.7383 | avg_preds=10.0 | max_score=0.9916
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.34it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.31it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [08:33:11] ep=33 step=500/7516 loss=2.8832 | lr=6.30e-05
+  [08:33:54] ep=33 step=1000/7516 loss=3.5092 | lr=6.28e-05
+  [08:34:36] ep=33 step=1500/7516 loss=4.9742 | lr=6.27e-05
+  [08:35:19] ep=33 step=2000/7516 loss=3.0787 | lr=6.25e-05
+  [08:36:02] ep=33 step=2500/7516 loss=4.8840 | lr=6.24e-05
+  [08:36:45] ep=33 step=3000/7516 loss=2.6140 | lr=6.22e-05
+  [08:37:27] ep=33 step=3500/7516 loss=2.1266 | lr=6.20e-05
+  [08:38:10] ep=33 step=4000/7516 loss=3.1581 | lr=6.19e-05
+  [08:38:53] ep=33 step=4500/7516 loss=2.9361 | lr=6.17e-05
+  [08:39:36] ep=33 step=5000/7516 loss=8.5759 | lr=6.16e-05
+  [08:40:18] ep=33 step=5500/7516 loss=3.1085 | lr=6.14e-05
+  [08:41:01] ep=33 step=6000/7516 loss=4.8824 | lr=6.13e-05
+  [08:41:44] ep=33 step=6500/7516 loss=2.8180 | lr=6.11e-05
+  [08:42:26] ep=33 step=7000/7516 loss=3.0049 | lr=6.10e-05
+  [08:43:09] ep=33 step=7500/7516 loss=2.6310 | lr=6.08e-05
+[08:43:11] Epoch 33/70 | loss=3.8354 | lr=6.08e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [08:43:54] ep=34 step=500/7516 loss=2.4891 | lr=6.06e-05
+  [08:44:37] ep=34 step=1000/7516 loss=2.6685 | lr=6.05e-05
+  [08:45:19] ep=34 step=1500/7516 loss=4.1495 | lr=6.03e-05
+  [08:46:02] ep=34 step=2000/7516 loss=2.8876 | lr=6.02e-05
+  [08:46:45] ep=34 step=2500/7516 loss=3.6656 | lr=6.00e-05
+  [08:47:27] ep=34 step=3000/7516 loss=2.6763 | lr=5.98e-05
+  [08:48:10] ep=34 step=3500/7516 loss=2.5948 | lr=5.97e-05
+  [08:48:53] ep=34 step=4000/7516 loss=2.7669 | lr=5.95e-05
+  [08:49:36] ep=34 step=4500/7516 loss=5.8197 | lr=5.94e-05
+  [08:50:19] ep=34 step=5000/7516 loss=3.7455 | lr=5.92e-05
+  [08:51:01] ep=34 step=5500/7516 loss=3.9485 | lr=5.91e-05
+  [08:51:44] ep=34 step=6000/7516 loss=3.4206 | lr=5.89e-05
+  [08:52:26] ep=34 step=6500/7516 loss=3.5539 | lr=5.87e-05
+  [08:53:09] ep=34 step=7000/7516 loss=2.7343 | lr=5.86e-05
+  [08:53:52] ep=34 step=7500/7516 loss=2.3931 | lr=5.84e-05
+[08:53:53] Epoch 34/70 | loss=3.7760 | lr=5.84e-05 | 10.7min
+[08:54:31] Val mAP=0.3823 | mAP50=0.7353 | avg_preds=10.0 | max_score=0.9920
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [08:55:14] ep=35 step=500/7516 loss=2.8572 | lr=5.83e-05
+  [08:55:57] ep=35 step=1000/7516 loss=7.4148 | lr=5.81e-05
+  [08:56:39] ep=35 step=1500/7516 loss=2.8770 | lr=5.79e-05
+  [08:57:22] ep=35 step=2000/7516 loss=3.0938 | lr=5.78e-05
+  [08:58:04] ep=35 step=2500/7516 loss=3.6828 | lr=5.76e-05
+  [08:58:46] ep=35 step=3000/7516 loss=5.8355 | lr=5.75e-05
+  [08:59:29] ep=35 step=3500/7516 loss=4.7956 | lr=5.73e-05
+  [09:00:12] ep=35 step=4000/7516 loss=3.9702 | lr=5.71e-05
+  [09:00:54] ep=35 step=4500/7516 loss=7.0689 | lr=5.70e-05
+  [09:01:36] ep=35 step=5000/7516 loss=3.3434 | lr=5.68e-05
+  [09:02:19] ep=35 step=5500/7516 loss=4.7514 | lr=5.67e-05
+  [09:03:01] ep=35 step=6000/7516 loss=3.6031 | lr=5.65e-05
+  [09:03:44] ep=35 step=6500/7516 loss=4.8881 | lr=5.64e-05
+  [09:04:27] ep=35 step=7000/7516 loss=4.7676 | lr=5.62e-05
+  [09:05:09] ep=35 step=7500/7516 loss=3.3952 | lr=5.60e-05
+[09:05:10] Epoch 35/70 | loss=3.7495 | lr=5.60e-05 | 10.6min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [09:05:53] ep=36 step=500/7516 loss=3.3478 | lr=5.59e-05
+  [09:06:36] ep=36 step=1000/7516 loss=2.6184 | lr=5.57e-05
+  [09:07:18] ep=36 step=1500/7516 loss=3.0551 | lr=5.55e-05
+  [09:08:01] ep=36 step=2000/7516 loss=2.6771 | lr=5.54e-05
+  [09:08:43] ep=36 step=2500/7516 loss=8.2879 | lr=5.52e-05
+  [09:09:25] ep=36 step=3000/7516 loss=3.7780 | lr=5.51e-05
+  [09:10:08] ep=36 step=3500/7516 loss=3.1027 | lr=5.49e-05
+  [09:10:50] ep=36 step=4000/7516 loss=6.2070 | lr=5.47e-05
+  [09:11:32] ep=36 step=4500/7516 loss=1.8951 | lr=5.46e-05
+  [09:12:15] ep=36 step=5000/7516 loss=4.2084 | lr=5.44e-05
+  [09:12:57] ep=36 step=5500/7516 loss=3.8878 | lr=5.43e-05
+  [09:13:40] ep=36 step=6000/7516 loss=2.6462 | lr=5.41e-05
+  [09:14:22] ep=36 step=6500/7516 loss=3.5824 | lr=5.39e-05
+  [09:15:05] ep=36 step=7000/7516 loss=6.1258 | lr=5.38e-05
+  [09:15:47] ep=36 step=7500/7516 loss=3.9216 | lr=5.36e-05
+[09:15:49] Epoch 36/70 | loss=3.6909 | lr=5.36e-05 | 10.6min
+[09:16:27] Val mAP=0.3888 | mAP50=0.7479 | avg_preds=10.0 | max_score=0.9920
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.14it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.12it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [09:17:10] ep=37 step=500/7516 loss=4.9208 | lr=5.35e-05
+  [09:17:53] ep=37 step=1000/7516 loss=2.9258 | lr=5.33e-05
+  [09:18:36] ep=37 step=1500/7516 loss=4.5164 | lr=5.31e-05
+  [09:19:18] ep=37 step=2000/7516 loss=2.6049 | lr=5.30e-05
+  [09:20:01] ep=37 step=2500/7516 loss=3.2605 | lr=5.28e-05
+  [09:20:44] ep=37 step=3000/7516 loss=6.0329 | lr=5.27e-05
+  [09:21:27] ep=37 step=3500/7516 loss=4.6777 | lr=5.25e-05
+  [09:22:09] ep=37 step=4000/7516 loss=2.7944 | lr=5.23e-05
+  [09:22:52] ep=37 step=4500/7516 loss=2.4640 | lr=5.22e-05
+  [09:23:35] ep=37 step=5000/7516 loss=2.7228 | lr=5.20e-05
+  [09:24:18] ep=37 step=5500/7516 loss=3.6111 | lr=5.19e-05
+  [09:25:00] ep=37 step=6000/7516 loss=3.8954 | lr=5.17e-05
+  [09:25:43] ep=37 step=6500/7516 loss=2.7581 | lr=5.15e-05
+  [09:26:26] ep=37 step=7000/7516 loss=4.4622 | lr=5.14e-05
+  [09:27:08] ep=37 step=7500/7516 loss=5.8170 | lr=5.12e-05
+[09:27:10] Epoch 37/70 | loss=3.6675 | lr=5.12e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [09:27:53] ep=38 step=500/7516 loss=2.2526 | lr=5.10e-05
+  [09:28:36] ep=38 step=1000/7516 loss=3.2872 | lr=5.09e-05
+  [09:29:18] ep=38 step=1500/7516 loss=3.6145 | lr=5.07e-05
+  [09:30:01] ep=38 step=2000/7516 loss=7.6768 | lr=5.06e-05
+  [09:30:44] ep=38 step=2500/7516 loss=2.2495 | lr=5.04e-05
+  [09:31:27] ep=38 step=3000/7516 loss=2.6695 | lr=5.02e-05
+  [09:32:09] ep=38 step=3500/7516 loss=3.9319 | lr=5.01e-05
+  [09:32:52] ep=38 step=4000/7516 loss=2.6722 | lr=4.99e-05
+  [09:33:35] ep=38 step=4500/7516 loss=3.1588 | lr=4.98e-05
+  [09:34:17] ep=38 step=5000/7516 loss=2.8939 | lr=4.96e-05
+  [09:35:00] ep=38 step=5500/7516 loss=2.4627 | lr=4.94e-05
+  [09:35:42] ep=38 step=6000/7516 loss=2.6196 | lr=4.93e-05
+  [09:36:25] ep=38 step=6500/7516 loss=4.2052 | lr=4.91e-05
+  [09:37:08] ep=38 step=7000/7516 loss=4.1220 | lr=4.90e-05
+  [09:37:51] ep=38 step=7500/7516 loss=2.2211 | lr=4.88e-05
+[09:37:53] Epoch 38/70 | loss=3.6380 | lr=4.88e-05 | 10.7min
+[09:38:31] Val mAP=0.3917 | mAP50=0.7553 | avg_preds=10.0 | max_score=0.9915
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.11it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.09it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [09:39:14] ep=39 step=500/7516 loss=2.3539 | lr=4.86e-05
+  [09:39:56] ep=39 step=1000/7516 loss=2.6225 | lr=4.85e-05
+  [09:40:39] ep=39 step=1500/7516 loss=3.1270 | lr=4.83e-05
+  [09:41:21] ep=39 step=2000/7516 loss=4.4257 | lr=4.81e-05
+  [09:42:04] ep=39 step=2500/7516 loss=3.3545 | lr=4.80e-05
+  [09:42:47] ep=39 step=3000/7516 loss=8.2280 | lr=4.78e-05
+  [09:43:30] ep=39 step=3500/7516 loss=5.6573 | lr=4.77e-05
+  [09:44:12] ep=39 step=4000/7516 loss=6.2912 | lr=4.75e-05
+  [09:44:55] ep=39 step=4500/7516 loss=2.4166 | lr=4.73e-05
+  [09:45:38] ep=39 step=5000/7516 loss=2.1476 | lr=4.72e-05
+  [09:46:20] ep=39 step=5500/7516 loss=4.2019 | lr=4.70e-05
+  [09:47:03] ep=39 step=6000/7516 loss=2.6276 | lr=4.69e-05
+  [09:47:45] ep=39 step=6500/7516 loss=4.1569 | lr=4.67e-05
+  [09:48:28] ep=39 step=7000/7516 loss=2.3705 | lr=4.65e-05
+  [09:49:11] ep=39 step=7500/7516 loss=3.8920 | lr=4.64e-05
+[09:49:12] Epoch 39/70 | loss=3.6598 | lr=4.64e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [09:49:55] ep=40 step=500/7516 loss=2.9332 | lr=4.62e-05
+  [09:50:38] ep=40 step=1000/7516 loss=2.4571 | lr=4.61e-05
+  [09:51:20] ep=40 step=1500/7516 loss=4.0106 | lr=4.59e-05
+  [09:52:03] ep=40 step=2000/7516 loss=3.1192 | lr=4.57e-05
+  [09:52:45] ep=40 step=2500/7516 loss=2.7657 | lr=4.56e-05
+  [09:53:28] ep=40 step=3000/7516 loss=5.6805 | lr=4.54e-05
+  [09:54:10] ep=40 step=3500/7516 loss=2.0990 | lr=4.53e-05
+  [09:54:53] ep=40 step=4000/7516 loss=2.8783 | lr=4.51e-05
+  [09:55:36] ep=40 step=4500/7516 loss=2.5895 | lr=4.49e-05
+  [09:56:18] ep=40 step=5000/7516 loss=3.4938 | lr=4.48e-05
+  [09:57:01] ep=40 step=5500/7516 loss=4.0762 | lr=4.46e-05
+  [09:57:43] ep=40 step=6000/7516 loss=2.8511 | lr=4.45e-05
+  [09:58:25] ep=40 step=6500/7516 loss=4.1622 | lr=4.43e-05
+  [09:59:08] ep=40 step=7000/7516 loss=4.9734 | lr=4.41e-05
+  [09:59:51] ep=40 step=7500/7516 loss=3.1597 | lr=4.40e-05
+[09:59:52] Epoch 40/70 | loss=3.5911 | lr=4.40e-05 | 10.7min
+[10:00:30] Val mAP=0.3907 | mAP50=0.7608 | avg_preds=10.0 | max_score=0.9926
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.51it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_40
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:01:13] ep=41 step=500/7516 loss=3.4925 | lr=4.38e-05
+  [10:01:56] ep=41 step=1000/7516 loss=7.6825 | lr=4.37e-05
+  [10:02:38] ep=41 step=1500/7516 loss=2.8301 | lr=4.35e-05
+  [10:03:21] ep=41 step=2000/7516 loss=2.7559 | lr=4.33e-05
+  [10:04:04] ep=41 step=2500/7516 loss=5.4341 | lr=4.32e-05
+  [10:04:47] ep=41 step=3000/7516 loss=3.5957 | lr=4.30e-05
+  [10:05:29] ep=41 step=3500/7516 loss=5.0380 | lr=4.29e-05
+  [10:06:12] ep=41 step=4000/7516 loss=7.2001 | lr=4.27e-05
+  [10:06:55] ep=41 step=4500/7516 loss=2.1850 | lr=4.25e-05
+  [10:07:38] ep=41 step=5000/7516 loss=4.0829 | lr=4.24e-05
+  [10:08:21] ep=41 step=5500/7516 loss=3.9632 | lr=4.22e-05
+  [10:09:03] ep=41 step=6000/7516 loss=2.6399 | lr=4.21e-05
+  [10:09:46] ep=41 step=6500/7516 loss=7.3395 | lr=4.19e-05
+  [10:10:29] ep=41 step=7000/7516 loss=3.0668 | lr=4.17e-05
+  [10:11:12] ep=41 step=7500/7516 loss=5.0037 | lr=4.16e-05
+[10:11:13] Epoch 41/70 | loss=3.5691 | lr=4.16e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:11:56] ep=42 step=500/7516 loss=6.6511 | lr=4.14e-05
+  [10:12:39] ep=42 step=1000/7516 loss=3.7394 | lr=4.13e-05
+  [10:13:21] ep=42 step=1500/7516 loss=6.4867 | lr=4.11e-05
+  [10:14:04] ep=42 step=2000/7516 loss=4.5253 | lr=4.09e-05
+  [10:14:47] ep=42 step=2500/7516 loss=2.6198 | lr=4.08e-05
+  [10:15:30] ep=42 step=3000/7516 loss=5.6540 | lr=4.06e-05
+  [10:16:13] ep=42 step=3500/7516 loss=5.1849 | lr=4.05e-05
+  [10:16:55] ep=42 step=4000/7516 loss=2.6923 | lr=4.03e-05
+  [10:17:38] ep=42 step=4500/7516 loss=2.1990 | lr=4.02e-05
+  [10:18:21] ep=42 step=5000/7516 loss=3.0925 | lr=4.00e-05
+  [10:19:04] ep=42 step=5500/7516 loss=8.4802 | lr=3.98e-05
+  [10:19:46] ep=42 step=6000/7516 loss=4.5110 | lr=3.97e-05
+  [10:20:29] ep=42 step=6500/7516 loss=2.2617 | lr=3.95e-05
+  [10:21:11] ep=42 step=7000/7516 loss=3.0783 | lr=3.94e-05
+  [10:21:54] ep=42 step=7500/7516 loss=2.6322 | lr=3.92e-05
+[10:21:56] Epoch 42/70 | loss=3.5416 | lr=3.92e-05 | 10.7min
+[10:22:34] Val mAP=0.3868 | mAP50=0.7559 | avg_preds=10.0 | max_score=0.9913
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:23:16] ep=43 step=500/7516 loss=4.1404 | lr=3.91e-05
+  [10:23:59] ep=43 step=1000/7516 loss=3.4591 | lr=3.89e-05
+  [10:24:42] ep=43 step=1500/7516 loss=4.5820 | lr=3.87e-05
+  [10:25:25] ep=43 step=2000/7516 loss=2.6506 | lr=3.86e-05
+  [10:26:07] ep=43 step=2500/7516 loss=4.0709 | lr=3.84e-05
+  [10:26:50] ep=43 step=3000/7516 loss=5.4974 | lr=3.83e-05
+  [10:27:33] ep=43 step=3500/7516 loss=2.6543 | lr=3.81e-05
+  [10:28:16] ep=43 step=4000/7516 loss=4.4036 | lr=3.80e-05
+  [10:28:59] ep=43 step=4500/7516 loss=2.5000 | lr=3.78e-05
+  [10:29:41] ep=43 step=5000/7516 loss=2.0957 | lr=3.76e-05
+  [10:30:24] ep=43 step=5500/7516 loss=2.4204 | lr=3.75e-05
+  [10:31:07] ep=43 step=6000/7516 loss=6.4342 | lr=3.73e-05
+  [10:31:49] ep=43 step=6500/7516 loss=2.8399 | lr=3.72e-05
+  [10:32:32] ep=43 step=7000/7516 loss=3.0002 | lr=3.70e-05
+  [10:33:15] ep=43 step=7500/7516 loss=3.8193 | lr=3.69e-05
+[10:33:17] Epoch 43/70 | loss=3.4705 | lr=3.69e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:33:59] ep=44 step=500/7516 loss=3.5952 | lr=3.67e-05
+  [10:34:42] ep=44 step=1000/7516 loss=3.1466 | lr=3.66e-05
+  [10:35:24] ep=44 step=1500/7516 loss=5.3478 | lr=3.64e-05
+  [10:36:07] ep=44 step=2000/7516 loss=2.8256 | lr=3.62e-05
+  [10:36:50] ep=44 step=2500/7516 loss=4.6546 | lr=3.61e-05
+  [10:37:33] ep=44 step=3000/7516 loss=3.5084 | lr=3.59e-05
+  [10:38:16] ep=44 step=3500/7516 loss=2.7617 | lr=3.58e-05
+  [10:38:58] ep=44 step=4000/7516 loss=4.0089 | lr=3.56e-05
+  [10:39:41] ep=44 step=4500/7516 loss=4.0944 | lr=3.55e-05
+  [10:40:23] ep=44 step=5000/7516 loss=3.8142 | lr=3.53e-05
+  [10:41:06] ep=44 step=5500/7516 loss=2.6213 | lr=3.52e-05
+  [10:41:49] ep=44 step=6000/7516 loss=2.9187 | lr=3.50e-05
+  [10:42:32] ep=44 step=6500/7516 loss=1.9784 | lr=3.49e-05
+  [10:43:14] ep=44 step=7000/7516 loss=2.2466 | lr=3.47e-05
+  [10:43:56] ep=44 step=7500/7516 loss=3.4624 | lr=3.46e-05
+[10:43:58] Epoch 44/70 | loss=3.5155 | lr=3.45e-05 | 10.7min
+[10:44:36] Val mAP=0.3905 | mAP50=0.7656 | avg_preds=10.0 | max_score=0.9912
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:45:19] ep=45 step=500/7516 loss=3.1834 | lr=3.44e-05
+  [10:46:02] ep=45 step=1000/7516 loss=2.9833 | lr=3.42e-05
+  [10:46:45] ep=45 step=1500/7516 loss=2.3140 | lr=3.41e-05
+  [10:47:27] ep=45 step=2000/7516 loss=2.3652 | lr=3.39e-05
+  [10:48:10] ep=45 step=2500/7516 loss=4.4958 | lr=3.38e-05
+  [10:48:53] ep=45 step=3000/7516 loss=4.6785 | lr=3.36e-05
+  [10:49:36] ep=45 step=3500/7516 loss=5.0385 | lr=3.35e-05
+  [10:50:19] ep=45 step=4000/7516 loss=3.4625 | lr=3.33e-05
+  [10:51:02] ep=45 step=4500/7516 loss=2.0514 | lr=3.32e-05
+  [10:51:45] ep=45 step=5000/7516 loss=2.6651 | lr=3.30e-05
+  [10:52:28] ep=45 step=5500/7516 loss=2.2289 | lr=3.29e-05
+  [10:53:10] ep=45 step=6000/7516 loss=3.8196 | lr=3.27e-05
+  [10:53:53] ep=45 step=6500/7516 loss=3.7460 | lr=3.26e-05
+  [10:54:36] ep=45 step=7000/7516 loss=3.6281 | lr=3.24e-05
+  [10:55:19] ep=45 step=7500/7516 loss=2.6311 | lr=3.23e-05
+[10:55:20] Epoch 45/70 | loss=3.4607 | lr=3.23e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [10:56:03] ep=46 step=500/7516 loss=6.1269 | lr=3.21e-05
+  [10:56:46] ep=46 step=1000/7516 loss=2.8706 | lr=3.20e-05
+  [10:57:29] ep=46 step=1500/7516 loss=3.4259 | lr=3.18e-05
+  [10:58:12] ep=46 step=2000/7516 loss=2.6975 | lr=3.17e-05
+  [10:58:55] ep=46 step=2500/7516 loss=4.1213 | lr=3.15e-05
+  [10:59:37] ep=46 step=3000/7516 loss=5.0168 | lr=3.14e-05
+  [11:00:20] ep=46 step=3500/7516 loss=4.2733 | lr=3.12e-05
+  [11:01:03] ep=46 step=4000/7516 loss=4.6382 | lr=3.11e-05
+  [11:01:45] ep=46 step=4500/7516 loss=2.9246 | lr=3.09e-05
+  [11:02:28] ep=46 step=5000/7516 loss=2.4744 | lr=3.08e-05
+  [11:03:11] ep=46 step=5500/7516 loss=6.3075 | lr=3.06e-05
+  [11:03:54] ep=46 step=6000/7516 loss=4.4986 | lr=3.05e-05
+  [11:04:36] ep=46 step=6500/7516 loss=4.2892 | lr=3.03e-05
+  [11:05:19] ep=46 step=7000/7516 loss=2.4440 | lr=3.02e-05
+  [11:06:01] ep=46 step=7500/7516 loss=2.9358 | lr=3.00e-05
+[11:06:03] Epoch 46/70 | loss=3.4358 | lr=3.00e-05 | 10.7min
+[11:06:41] Val mAP=0.3828 | mAP50=0.7530 | avg_preds=10.0 | max_score=0.9917
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [11:07:24] ep=47 step=500/7516 loss=2.8164 | lr=2.99e-05
+  [11:08:07] ep=47 step=1000/7516 loss=4.2189 | lr=2.97e-05
+  [11:08:49] ep=47 step=1500/7516 loss=2.0659 | lr=2.96e-05
+  [11:09:32] ep=47 step=2000/7516 loss=2.2959 | lr=2.94e-05
+  [11:10:15] ep=47 step=2500/7516 loss=5.5456 | lr=2.93e-05
+  [11:10:57] ep=47 step=3000/7516 loss=3.1412 | lr=2.92e-05
+  [11:11:40] ep=47 step=3500/7516 loss=2.2990 | lr=2.90e-05
+  [11:12:22] ep=47 step=4000/7516 loss=3.8908 | lr=2.89e-05
+  [11:13:04] ep=47 step=4500/7516 loss=3.6499 | lr=2.87e-05
+  [11:13:47] ep=47 step=5000/7516 loss=2.4785 | lr=2.86e-05
+  [11:14:30] ep=47 step=5500/7516 loss=2.5701 | lr=2.84e-05
+  [11:15:13] ep=47 step=6000/7516 loss=3.4707 | lr=2.83e-05
+  [11:15:55] ep=47 step=6500/7516 loss=3.3626 | lr=2.81e-05
+  [11:16:38] ep=47 step=7000/7516 loss=2.8983 | lr=2.80e-05
+  [11:17:20] ep=47 step=7500/7516 loss=2.7691 | lr=2.78e-05
+[11:17:22] Epoch 47/70 | loss=3.3901 | lr=2.78e-05 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [11:18:05] ep=48 step=500/7516 loss=2.6988 | lr=2.77e-05
+  [11:18:48] ep=48 step=1000/7516 loss=3.5392 | lr=2.76e-05
+  [11:19:31] ep=48 step=1500/7516 loss=2.9814 | lr=2.74e-05
+  [11:20:13] ep=48 step=2000/7516 loss=3.4351 | lr=2.73e-05
+  [11:20:56] ep=48 step=2500/7516 loss=2.6139 | lr=2.71e-05
+  [11:21:38] ep=48 step=3000/7516 loss=3.1518 | lr=2.70e-05
+  [11:22:21] ep=48 step=3500/7516 loss=2.2621 | lr=2.68e-05
+  [11:23:03] ep=48 step=4000/7516 loss=3.2132 | lr=2.67e-05
+  [11:23:46] ep=48 step=4500/7516 loss=2.8522 | lr=2.66e-05
+  [11:24:28] ep=48 step=5000/7516 loss=2.9303 | lr=2.64e-05
+  [11:25:11] ep=48 step=5500/7516 loss=3.0160 | lr=2.63e-05
+  [11:25:54] ep=48 step=6000/7516 loss=2.4997 | lr=2.61e-05
+  [11:26:36] ep=48 step=6500/7516 loss=2.4794 | lr=2.60e-05
+  [11:27:19] ep=48 step=7000/7516 loss=4.5807 | lr=2.58e-05
+  [11:28:02] ep=48 step=7500/7516 loss=2.0695 | lr=2.57e-05
+[11:28:03] Epoch 48/70 | loss=3.3950 | lr=2.57e-05 | 10.7min
+[11:28:41] Val mAP=0.3884 | mAP50=0.7651 | avg_preds=10.0 | max_score=0.9910
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [11:29:24] ep=49 step=500/7516 loss=5.0171 | lr=2.56e-05
+  [11:30:07] ep=49 step=1000/7516 loss=2.6785 | lr=2.54e-05
+  [11:30:49] ep=49 step=1500/7516 loss=2.6848 | lr=2.53e-05
+  [11:31:32] ep=49 step=2000/7516 loss=2.5707 | lr=2.51e-05
+  [11:32:14] ep=49 step=2500/7516 loss=2.8542 | lr=2.50e-05
+  [11:32:57] ep=49 step=3000/7516 loss=3.2456 | lr=2.49e-05
+  [11:33:40] ep=49 step=3500/7516 loss=3.3404 | lr=2.47e-05
+  [11:34:41] ep=49 step=4000/7516 loss=4.5169 | lr=2.46e-05
+  [11:35:29] ep=49 step=4500/7516 loss=4.1250 | lr=2.44e-05
+  [11:36:12] ep=49 step=5000/7516 loss=2.4470 | lr=2.43e-05
+  [11:36:54] ep=49 step=5500/7516 loss=2.1772 | lr=2.42e-05
+  [11:37:37] ep=49 step=6000/7516 loss=4.4220 | lr=2.40e-05
+  [11:38:19] ep=49 step=6500/7516 loss=2.6652 | lr=2.39e-05
+  [11:39:02] ep=49 step=7000/7516 loss=2.4445 | lr=2.38e-05
+  [11:39:44] ep=49 step=7500/7516 loss=3.1257 | lr=2.36e-05
+[11:39:45] Epoch 49/70 | loss=3.3438 | lr=2.36e-05 | 11.1min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [11:40:28] ep=50 step=500/7516 loss=5.0270 | lr=2.35e-05
+  [11:41:11] ep=50 step=1000/7516 loss=2.1225 | lr=2.33e-05
+  [11:41:53] ep=50 step=1500/7516 loss=4.2456 | lr=2.32e-05
+  [11:42:36] ep=50 step=2000/7516 loss=2.3153 | lr=2.31e-05
+  [11:43:18] ep=50 step=2500/7516 loss=4.5731 | lr=2.29e-05
+  [11:44:01] ep=50 step=3000/7516 loss=3.3006 | lr=2.28e-05
+  [11:44:43] ep=50 step=3500/7516 loss=2.1338 | lr=2.27e-05
+  [11:45:26] ep=50 step=4000/7516 loss=2.7819 | lr=2.25e-05
+  [11:46:09] ep=50 step=4500/7516 loss=2.5354 | lr=2.24e-05
+  [11:46:51] ep=50 step=5000/7516 loss=2.5577 | lr=2.23e-05
+  [11:47:34] ep=50 step=5500/7516 loss=2.4534 | lr=2.21e-05
+  [11:48:16] ep=50 step=6000/7516 loss=3.7195 | lr=2.20e-05
+  [11:48:59] ep=50 step=6500/7516 loss=5.2764 | lr=2.19e-05
+  [11:49:51] ep=50 step=7000/7516 loss=3.2725 | lr=2.17e-05
+  [11:50:48] ep=50 step=7500/7516 loss=3.1542 | lr=2.16e-05
+[11:50:50] Epoch 50/70 | loss=3.3248 | lr=2.16e-05 | 11.1min
+[11:51:28] Val mAP=0.3815 | mAP50=0.7570 | avg_preds=10.0 | max_score=0.9922
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.51it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_50
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [11:52:11] ep=51 step=500/7516 loss=2.6613 | lr=2.15e-05
+  [11:52:54] ep=51 step=1000/7516 loss=2.1823 | lr=2.13e-05
+  [11:53:36] ep=51 step=1500/7516 loss=2.8335 | lr=2.12e-05
+  [11:54:19] ep=51 step=2000/7516 loss=4.2376 | lr=2.11e-05
+  [11:55:02] ep=51 step=2500/7516 loss=4.5574 | lr=2.09e-05
+  [11:55:45] ep=51 step=3000/7516 loss=6.6359 | lr=2.08e-05
+  [11:56:45] ep=51 step=3500/7516 loss=2.8746 | lr=2.07e-05
+  [11:57:36] ep=51 step=4000/7516 loss=3.5083 | lr=2.05e-05
+  [11:58:18] ep=51 step=4500/7516 loss=3.8415 | lr=2.04e-05
+  [11:59:01] ep=51 step=5000/7516 loss=3.0481 | lr=2.03e-05
+  [11:59:44] ep=51 step=5500/7516 loss=2.4258 | lr=2.02e-05
+  [12:00:26] ep=51 step=6000/7516 loss=2.3143 | lr=2.00e-05
+  [12:01:09] ep=51 step=6500/7516 loss=3.2663 | lr=1.99e-05
+  [12:01:52] ep=51 step=7000/7516 loss=2.3879 | lr=1.98e-05
+  [12:02:35] ep=51 step=7500/7516 loss=3.3634 | lr=1.96e-05
+[12:02:36] Epoch 51/70 | loss=3.3051 | lr=1.96e-05 | 11.1min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:03:19] ep=52 step=500/7516 loss=7.0690 | lr=1.95e-05
+  [12:04:02] ep=52 step=1000/7516 loss=2.4669 | lr=1.94e-05
+  [12:04:45] ep=52 step=1500/7516 loss=4.5878 | lr=1.93e-05
+  [12:05:28] ep=52 step=2000/7516 loss=2.6048 | lr=1.91e-05
+  [12:06:10] ep=52 step=2500/7516 loss=3.5729 | lr=1.90e-05
+  [12:06:53] ep=52 step=3000/7516 loss=1.7991 | lr=1.89e-05
+  [12:07:36] ep=52 step=3500/7516 loss=2.4581 | lr=1.88e-05
+  [12:08:19] ep=52 step=4000/7516 loss=2.2265 | lr=1.86e-05
+  [12:09:01] ep=52 step=4500/7516 loss=2.0771 | lr=1.85e-05
+  [12:09:44] ep=52 step=5000/7516 loss=2.9793 | lr=1.84e-05
+  [12:10:26] ep=52 step=5500/7516 loss=3.9893 | lr=1.83e-05
+  [12:11:09] ep=52 step=6000/7516 loss=2.1897 | lr=1.81e-05
+  [12:11:52] ep=52 step=6500/7516 loss=3.2406 | lr=1.80e-05
+  [12:12:35] ep=52 step=7000/7516 loss=2.7045 | lr=1.79e-05
+  [12:13:17] ep=52 step=7500/7516 loss=2.4129 | lr=1.78e-05
+[12:13:19] Epoch 52/70 | loss=3.2713 | lr=1.78e-05 | 10.7min
+[12:13:57] Val mAP=0.3991 | mAP50=0.7909 | avg_preds=10.0 | max_score=0.9920
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.07it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:14:40] ep=53 step=500/7516 loss=2.7248 | lr=1.76e-05
+  [12:15:23] ep=53 step=1000/7516 loss=3.2534 | lr=1.75e-05
+  [12:16:06] ep=53 step=1500/7516 loss=3.9674 | lr=1.74e-05
+  [12:16:48] ep=53 step=2000/7516 loss=5.0278 | lr=1.73e-05
+  [12:17:31] ep=53 step=2500/7516 loss=2.6370 | lr=1.71e-05
+  [12:18:39] ep=53 step=3000/7516 loss=3.2837 | lr=1.70e-05
+  [12:19:21] ep=53 step=3500/7516 loss=3.2512 | lr=1.69e-05
+  [12:20:04] ep=53 step=4000/7516 loss=5.4794 | lr=1.68e-05
+  [12:20:46] ep=53 step=4500/7516 loss=2.2781 | lr=1.67e-05
+  [12:21:29] ep=53 step=5000/7516 loss=3.3033 | lr=1.65e-05
+  [12:22:11] ep=53 step=5500/7516 loss=5.9181 | lr=1.64e-05
+  [12:22:54] ep=53 step=6000/7516 loss=1.8732 | lr=1.63e-05
+  [12:23:36] ep=53 step=6500/7516 loss=2.1656 | lr=1.62e-05
+  [12:24:19] ep=53 step=7000/7516 loss=2.0571 | lr=1.61e-05
+  [12:25:01] ep=53 step=7500/7516 loss=2.0616 | lr=1.60e-05
+[12:25:03] Epoch 53/70 | loss=3.2548 | lr=1.59e-05 | 11.1min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:25:46] ep=54 step=500/7516 loss=2.5803 | lr=1.58e-05
+  [12:26:28] ep=54 step=1000/7516 loss=3.4179 | lr=1.57e-05
+  [12:27:11] ep=54 step=1500/7516 loss=2.2404 | lr=1.56e-05
+  [12:27:54] ep=54 step=2000/7516 loss=2.9103 | lr=1.55e-05
+  [12:28:36] ep=54 step=2500/7516 loss=1.9681 | lr=1.54e-05
+  [12:29:19] ep=54 step=3000/7516 loss=2.5326 | lr=1.52e-05
+  [12:30:01] ep=54 step=3500/7516 loss=4.4730 | lr=1.51e-05
+  [12:30:44] ep=54 step=4000/7516 loss=2.4311 | lr=1.50e-05
+  [12:31:26] ep=54 step=4500/7516 loss=2.5511 | lr=1.49e-05
+  [12:32:09] ep=54 step=5000/7516 loss=1.7505 | lr=1.48e-05
+  [12:32:52] ep=54 step=5500/7516 loss=2.3486 | lr=1.47e-05
+  [12:33:34] ep=54 step=6000/7516 loss=4.7664 | lr=1.46e-05
+  [12:34:17] ep=54 step=6500/7516 loss=3.3846 | lr=1.44e-05
+  [12:34:59] ep=54 step=7000/7516 loss=4.4624 | lr=1.43e-05
+  [12:35:42] ep=54 step=7500/7516 loss=2.9823 | lr=1.42e-05
+[12:35:43] Epoch 54/70 | loss=3.2499 | lr=1.42e-05 | 10.7min
+[12:36:21] Val mAP=0.4022 | mAP50=0.8017 | avg_preds=10.0 | max_score=0.9924
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.00it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.98it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:37:04] ep=55 step=500/7516 loss=2.4096 | lr=1.41e-05
+  [12:37:47] ep=55 step=1000/7516 loss=4.6969 | lr=1.40e-05
+  [12:38:29] ep=55 step=1500/7516 loss=2.9343 | lr=1.39e-05
+  [12:39:12] ep=55 step=2000/7516 loss=4.6024 | lr=1.38e-05
+  [12:39:55] ep=55 step=2500/7516 loss=2.1666 | lr=1.37e-05
+  [12:40:37] ep=55 step=3000/7516 loss=4.9375 | lr=1.36e-05
+  [12:41:20] ep=55 step=3500/7516 loss=3.0015 | lr=1.34e-05
+  [12:42:03] ep=55 step=4000/7516 loss=3.3683 | lr=1.33e-05
+  [12:42:45] ep=55 step=4500/7516 loss=4.8572 | lr=1.32e-05
+  [12:43:35] ep=55 step=5000/7516 loss=2.2438 | lr=1.31e-05
+  [12:44:29] ep=55 step=5500/7516 loss=6.6177 | lr=1.30e-05
+  [12:45:12] ep=55 step=6000/7516 loss=2.3265 | lr=1.29e-05
+  [12:45:55] ep=55 step=6500/7516 loss=2.5898 | lr=1.28e-05
+  [12:46:37] ep=55 step=7000/7516 loss=4.8743 | lr=1.27e-05
+  [12:47:20] ep=55 step=7500/7516 loss=4.3803 | lr=1.26e-05
+[12:47:21] Epoch 55/70 | loss=3.2250 | lr=1.26e-05 | 11.0min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:48:04] ep=56 step=500/7516 loss=2.9228 | lr=1.25e-05
+  [12:48:46] ep=56 step=1000/7516 loss=3.7650 | lr=1.24e-05
+  [12:49:29] ep=56 step=1500/7516 loss=2.1429 | lr=1.23e-05
+  [12:50:12] ep=56 step=2000/7516 loss=3.3859 | lr=1.22e-05
+  [12:50:54] ep=56 step=2500/7516 loss=3.8426 | lr=1.20e-05
+  [12:51:37] ep=56 step=3000/7516 loss=1.9916 | lr=1.19e-05
+  [12:52:20] ep=56 step=3500/7516 loss=2.4829 | lr=1.18e-05
+  [12:53:03] ep=56 step=4000/7516 loss=3.6792 | lr=1.17e-05
+  [12:53:45] ep=56 step=4500/7516 loss=3.9507 | lr=1.16e-05
+  [12:54:28] ep=56 step=5000/7516 loss=3.0517 | lr=1.15e-05
+  [12:55:11] ep=56 step=5500/7516 loss=2.3371 | lr=1.14e-05
+  [12:55:54] ep=56 step=6000/7516 loss=4.1716 | lr=1.13e-05
+  [12:56:36] ep=56 step=6500/7516 loss=3.3929 | lr=1.12e-05
+  [12:57:18] ep=56 step=7000/7516 loss=3.8677 | lr=1.11e-05
+  [12:58:01] ep=56 step=7500/7516 loss=2.1280 | lr=1.10e-05
+[12:58:03] Epoch 56/70 | loss=3.2079 | lr=1.10e-05 | 10.7min
+[12:58:41] Val mAP=0.4042 | mAP50=0.8127 | avg_preds=10.0 | max_score=0.9927
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.33it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.30it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [12:59:24] ep=57 step=500/7516 loss=4.9732 | lr=1.09e-05
+  [13:00:07] ep=57 step=1000/7516 loss=3.4946 | lr=1.08e-05
+  [13:00:49] ep=57 step=1500/7516 loss=4.1588 | lr=1.07e-05
+  [13:01:32] ep=57 step=2000/7516 loss=4.4342 | lr=1.06e-05
+  [13:02:15] ep=57 step=2500/7516 loss=3.9295 | lr=1.05e-05
+  [13:02:57] ep=57 step=3000/7516 loss=2.8673 | lr=1.04e-05
+  [13:03:40] ep=57 step=3500/7516 loss=2.1518 | lr=1.03e-05
+  [13:04:23] ep=57 step=4000/7516 loss=2.6368 | lr=1.02e-05
+  [13:05:05] ep=57 step=4500/7516 loss=4.2537 | lr=1.01e-05
+  [13:05:48] ep=57 step=5000/7516 loss=2.8604 | lr=1.00e-05
+  [13:06:30] ep=57 step=5500/7516 loss=2.1490 | lr=9.93e-06
+  [13:07:13] ep=57 step=6000/7516 loss=4.9846 | lr=9.84e-06
+  [13:07:55] ep=57 step=6500/7516 loss=2.4373 | lr=9.74e-06
+  [13:08:38] ep=57 step=7000/7516 loss=4.1133 | lr=9.65e-06
+  [13:09:21] ep=57 step=7500/7516 loss=4.5107 | lr=9.55e-06
+[13:09:22] Epoch 57/70 | loss=3.2096 | lr=9.55e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [13:10:05] ep=58 step=500/7516 loss=2.3719 | lr=9.45e-06
+  [13:10:47] ep=58 step=1000/7516 loss=4.4083 | lr=9.36e-06
+  [13:11:30] ep=58 step=1500/7516 loss=5.8605 | lr=9.27e-06
+  [13:12:13] ep=58 step=2000/7516 loss=3.0105 | lr=9.17e-06
+  [13:12:55] ep=58 step=2500/7516 loss=7.5410 | lr=9.08e-06
+  [13:13:38] ep=58 step=3000/7516 loss=1.9578 | lr=8.99e-06
+  [13:14:20] ep=58 step=3500/7516 loss=2.8190 | lr=8.90e-06
+  [13:15:02] ep=58 step=4000/7516 loss=3.4149 | lr=8.81e-06
+  [13:15:45] ep=58 step=4500/7516 loss=2.6576 | lr=8.72e-06
+  [13:16:27] ep=58 step=5000/7516 loss=5.5936 | lr=8.63e-06
+  [13:17:10] ep=58 step=5500/7516 loss=2.1824 | lr=8.54e-06
+  [13:17:53] ep=58 step=6000/7516 loss=1.6634 | lr=8.45e-06
+  [13:18:35] ep=58 step=6500/7516 loss=2.4638 | lr=8.36e-06
+  [13:19:18] ep=58 step=7000/7516 loss=4.9820 | lr=8.27e-06
+  [13:20:00] ep=58 step=7500/7516 loss=1.8863 | lr=8.18e-06
+[13:20:02] Epoch 58/70 | loss=3.1699 | lr=8.18e-06 | 10.7min
+[13:20:40] Val mAP=0.4094 | mAP50=0.8198 | avg_preds=10.0 | max_score=0.9924
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.09it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.07it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [13:21:23] ep=59 step=500/7516 loss=2.2578 | lr=8.09e-06
+  [13:22:06] ep=59 step=1000/7516 loss=3.0264 | lr=8.00e-06
+  [13:22:49] ep=59 step=1500/7516 loss=2.3612 | lr=7.91e-06
+  [13:23:31] ep=59 step=2000/7516 loss=2.7559 | lr=7.83e-06
+  [13:24:14] ep=59 step=2500/7516 loss=2.3881 | lr=7.74e-06
+  [13:24:57] ep=59 step=3000/7516 loss=2.8528 | lr=7.66e-06
+  [13:25:40] ep=59 step=3500/7516 loss=2.5919 | lr=7.57e-06
+  [13:26:22] ep=59 step=4000/7516 loss=2.3637 | lr=7.49e-06
+  [13:27:05] ep=59 step=4500/7516 loss=2.1517 | lr=7.40e-06
+  [13:27:48] ep=59 step=5000/7516 loss=3.1154 | lr=7.32e-06
+  [13:28:30] ep=59 step=5500/7516 loss=4.2902 | lr=7.23e-06
+  [13:29:13] ep=59 step=6000/7516 loss=5.5007 | lr=7.15e-06
+  [13:29:56] ep=59 step=6500/7516 loss=3.0328 | lr=7.07e-06
+  [13:30:38] ep=59 step=7000/7516 loss=3.9654 | lr=6.99e-06
+  [13:31:21] ep=59 step=7500/7516 loss=2.2392 | lr=6.90e-06
+[13:31:22] Epoch 59/70 | loss=3.1660 | lr=6.90e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [13:32:06] ep=60 step=500/7516 loss=2.1907 | lr=6.82e-06
+  [13:32:49] ep=60 step=1000/7516 loss=2.1132 | lr=6.74e-06
+  [13:33:31] ep=60 step=1500/7516 loss=1.8345 | lr=6.66e-06
+  [13:34:14] ep=60 step=2000/7516 loss=4.4597 | lr=6.58e-06
+  [13:34:56] ep=60 step=2500/7516 loss=2.3580 | lr=6.50e-06
+  [13:35:39] ep=60 step=3000/7516 loss=3.1313 | lr=6.42e-06
+  [13:36:22] ep=60 step=3500/7516 loss=3.4471 | lr=6.34e-06
+  [13:37:05] ep=60 step=4000/7516 loss=2.8198 | lr=6.26e-06
+  [13:37:47] ep=60 step=4500/7516 loss=2.2664 | lr=6.19e-06
+  [13:38:30] ep=60 step=5000/7516 loss=2.8163 | lr=6.11e-06
+  [13:39:13] ep=60 step=5500/7516 loss=2.8279 | lr=6.03e-06
+  [13:39:55] ep=60 step=6000/7516 loss=4.8172 | lr=5.96e-06
+  [13:40:38] ep=60 step=6500/7516 loss=1.5830 | lr=5.88e-06
+  [13:41:21] ep=60 step=7000/7516 loss=1.8464 | lr=5.80e-06
+  [13:42:03] ep=60 step=7500/7516 loss=3.3882 | lr=5.73e-06
+[13:42:04] Epoch 60/70 | loss=3.1156 | lr=5.73e-06 | 10.7min
+[13:42:42] Val mAP=0.4080 | mAP50=0.8214 | avg_preds=10.0 | max_score=0.9928
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.50it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_60
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [13:43:25] ep=61 step=500/7516 loss=2.2408 | lr=5.65e-06
+  [13:44:08] ep=61 step=1000/7516 loss=4.4522 | lr=5.58e-06
+  [13:44:50] ep=61 step=1500/7516 loss=3.0317 | lr=5.51e-06
+  [13:45:33] ep=61 step=2000/7516 loss=2.4890 | lr=5.43e-06
+  [13:46:15] ep=61 step=2500/7516 loss=2.2744 | lr=5.36e-06
+  [13:46:58] ep=61 step=3000/7516 loss=1.3724 | lr=5.29e-06
+  [13:47:40] ep=61 step=3500/7516 loss=5.2331 | lr=5.22e-06
+  [13:48:23] ep=61 step=4000/7516 loss=2.4101 | lr=5.14e-06
+  [13:49:05] ep=61 step=4500/7516 loss=4.4610 | lr=5.07e-06
+  [13:49:48] ep=61 step=5000/7516 loss=3.7589 | lr=5.00e-06
+  [13:50:31] ep=61 step=5500/7516 loss=2.3517 | lr=5.00e-06
+  [13:51:13] ep=61 step=6000/7516 loss=1.4597 | lr=5.00e-06
+  [13:51:56] ep=61 step=6500/7516 loss=2.2740 | lr=5.00e-06
+  [13:52:39] ep=61 step=7000/7516 loss=1.9817 | lr=5.00e-06
+  [13:53:21] ep=61 step=7500/7516 loss=1.6001 | lr=5.00e-06
+[13:53:22] Epoch 61/70 | loss=3.1560 | lr=5.00e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [13:54:05] ep=62 step=500/7516 loss=2.6053 | lr=5.00e-06
+  [13:54:48] ep=62 step=1000/7516 loss=2.1483 | lr=5.00e-06
+  [13:55:30] ep=62 step=1500/7516 loss=2.6695 | lr=5.00e-06
+  [13:56:12] ep=62 step=2000/7516 loss=1.9875 | lr=5.00e-06
+  [13:56:55] ep=62 step=2500/7516 loss=4.6333 | lr=5.00e-06
+  [13:57:38] ep=62 step=3000/7516 loss=2.3891 | lr=5.00e-06
+  [13:58:20] ep=62 step=3500/7516 loss=2.0323 | lr=5.00e-06
+  [13:59:03] ep=62 step=4000/7516 loss=4.8923 | lr=5.00e-06
+  [13:59:45] ep=62 step=4500/7516 loss=2.8167 | lr=5.00e-06
+  [14:00:28] ep=62 step=5000/7516 loss=3.1912 | lr=5.00e-06
+  [14:01:11] ep=62 step=5500/7516 loss=2.2504 | lr=5.00e-06
+  [14:01:53] ep=62 step=6000/7516 loss=3.1844 | lr=5.00e-06
+  [14:02:36] ep=62 step=6500/7516 loss=1.8954 | lr=5.00e-06
+  [14:03:18] ep=62 step=7000/7516 loss=3.3364 | lr=5.00e-06
+  [14:04:01] ep=62 step=7500/7516 loss=2.0011 | lr=5.00e-06
+[14:04:02] Epoch 62/70 | loss=3.1104 | lr=5.00e-06 | 10.7min
+[14:04:40] Val mAP=0.4120 | mAP50=0.8288 | avg_preds=10.0 | max_score=0.9929
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  9.00it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.98it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [14:05:23] ep=63 step=500/7516 loss=1.9214 | lr=5.00e-06
+  [14:06:06] ep=63 step=1000/7516 loss=4.1972 | lr=5.00e-06
+  [14:06:49] ep=63 step=1500/7516 loss=2.8497 | lr=5.00e-06
+  [14:07:32] ep=63 step=2000/7516 loss=2.5004 | lr=5.00e-06
+  [14:08:15] ep=63 step=2500/7516 loss=2.2994 | lr=5.00e-06
+  [14:08:58] ep=63 step=3000/7516 loss=2.1544 | lr=5.00e-06
+  [14:09:40] ep=63 step=3500/7516 loss=2.7426 | lr=5.00e-06
+  [14:10:23] ep=63 step=4000/7516 loss=1.9212 | lr=5.00e-06
+  [14:11:06] ep=63 step=4500/7516 loss=3.5816 | lr=5.00e-06
+  [14:11:48] ep=63 step=5000/7516 loss=4.1388 | lr=5.00e-06
+  [14:12:31] ep=63 step=5500/7516 loss=2.0238 | lr=5.00e-06
+  [14:13:14] ep=63 step=6000/7516 loss=2.1039 | lr=5.00e-06
+  [14:13:57] ep=63 step=6500/7516 loss=2.3739 | lr=5.00e-06
+  [14:14:40] ep=63 step=7000/7516 loss=2.1892 | lr=5.00e-06
+  [14:15:22] ep=63 step=7500/7516 loss=2.5130 | lr=5.00e-06
+[14:15:24] Epoch 63/70 | loss=3.1271 | lr=5.00e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [14:16:06] ep=64 step=500/7516 loss=2.5879 | lr=5.00e-06
+  [14:16:49] ep=64 step=1000/7516 loss=3.1330 | lr=5.00e-06
+  [14:17:31] ep=64 step=1500/7516 loss=2.7610 | lr=5.00e-06
+  [14:18:14] ep=64 step=2000/7516 loss=2.3580 | lr=5.00e-06
+  [14:18:56] ep=64 step=2500/7516 loss=2.3577 | lr=5.00e-06
+  [14:19:39] ep=64 step=3000/7516 loss=4.1240 | lr=5.00e-06
+  [14:20:22] ep=64 step=3500/7516 loss=2.4156 | lr=5.00e-06
+  [14:21:05] ep=64 step=4000/7516 loss=3.7201 | lr=5.00e-06
+  [14:21:48] ep=64 step=4500/7516 loss=3.0133 | lr=5.00e-06
+  [14:22:31] ep=64 step=5000/7516 loss=5.2259 | lr=5.00e-06
+  [14:23:14] ep=64 step=5500/7516 loss=4.4339 | lr=5.00e-06
+  [14:23:56] ep=64 step=6000/7516 loss=2.8495 | lr=5.00e-06
+  [14:24:39] ep=64 step=6500/7516 loss=2.0663 | lr=5.00e-06
+  [14:25:22] ep=64 step=7000/7516 loss=2.5260 | lr=5.00e-06
+  [14:26:05] ep=64 step=7500/7516 loss=2.6428 | lr=5.00e-06
+[14:26:06] Epoch 64/70 | loss=3.1260 | lr=5.00e-06 | 10.7min
+[14:26:44] Val mAP=0.4115 | mAP50=0.8347 | avg_preds=10.0 | max_score=0.9932
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [14:27:27] ep=65 step=500/7516 loss=3.6806 | lr=5.00e-06
+  [14:28:10] ep=65 step=1000/7516 loss=3.9514 | lr=5.00e-06
+  [14:28:52] ep=65 step=1500/7516 loss=2.2673 | lr=5.00e-06
+  [14:29:35] ep=65 step=2000/7516 loss=6.7225 | lr=5.00e-06
+  [14:30:18] ep=65 step=2500/7516 loss=3.1055 | lr=5.00e-06
+  [14:31:00] ep=65 step=3000/7516 loss=2.7739 | lr=5.00e-06
+  [14:31:43] ep=65 step=3500/7516 loss=2.8931 | lr=5.00e-06
+  [14:32:26] ep=65 step=4000/7516 loss=2.3539 | lr=5.00e-06
+  [14:33:08] ep=65 step=4500/7516 loss=3.5850 | lr=5.00e-06
+  [14:33:51] ep=65 step=5000/7516 loss=3.0795 | lr=5.00e-06
+  [14:34:34] ep=65 step=5500/7516 loss=6.5867 | lr=5.00e-06
+  [14:35:16] ep=65 step=6000/7516 loss=3.0645 | lr=5.00e-06
+  [14:35:59] ep=65 step=6500/7516 loss=2.1804 | lr=5.00e-06
+  [14:36:42] ep=65 step=7000/7516 loss=3.3133 | lr=5.00e-06
+  [14:37:24] ep=65 step=7500/7516 loss=1.5853 | lr=5.00e-06
+[14:37:25] Epoch 65/70 | loss=3.1056 | lr=5.00e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [14:38:09] ep=66 step=500/7516 loss=4.2725 | lr=5.00e-06
+  [14:38:51] ep=66 step=1000/7516 loss=2.7067 | lr=5.00e-06
+  [14:39:34] ep=66 step=1500/7516 loss=8.9215 | lr=5.00e-06
+  [14:40:17] ep=66 step=2000/7516 loss=2.4255 | lr=5.00e-06
+  [14:40:59] ep=66 step=2500/7516 loss=2.9630 | lr=5.00e-06
+  [14:41:41] ep=66 step=3000/7516 loss=1.6811 | lr=5.00e-06
+  [14:42:24] ep=66 step=3500/7516 loss=3.1028 | lr=5.00e-06
+  [14:43:06] ep=66 step=4000/7516 loss=3.9147 | lr=5.00e-06
+  [14:43:49] ep=66 step=4500/7516 loss=2.6079 | lr=5.00e-06
+  [14:44:32] ep=66 step=5000/7516 loss=2.6682 | lr=5.00e-06
+  [14:45:14] ep=66 step=5500/7516 loss=5.0164 | lr=5.00e-06
+  [14:45:57] ep=66 step=6000/7516 loss=2.0841 | lr=5.00e-06
+  [14:46:39] ep=66 step=6500/7516 loss=1.8893 | lr=5.00e-06
+  [14:47:22] ep=66 step=7000/7516 loss=2.7566 | lr=5.00e-06
+  [14:48:05] ep=66 step=7500/7516 loss=3.8754 | lr=5.00e-06
+[14:48:06] Epoch 66/70 | loss=3.1329 | lr=5.00e-06 | 10.7min
+[14:48:44] Val mAP=0.4143 | mAP50=0.8410 | avg_preds=10.0 | max_score=0.9936
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.85it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  8.84it/s]
+  → New best! Saved to ./best_model_hw2.1
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [14:49:28] ep=67 step=500/7516 loss=6.7385 | lr=5.00e-06
+  [14:50:10] ep=67 step=1000/7516 loss=2.5767 | lr=5.00e-06
+  [14:50:53] ep=67 step=1500/7516 loss=4.5245 | lr=5.00e-06
+  [14:51:36] ep=67 step=2000/7516 loss=1.9357 | lr=5.00e-06
+  [14:52:19] ep=67 step=2500/7516 loss=6.6934 | lr=5.00e-06
+  [14:53:02] ep=67 step=3000/7516 loss=5.7421 | lr=5.00e-06
+  [14:53:45] ep=67 step=3500/7516 loss=2.5386 | lr=5.00e-06
+  [14:54:27] ep=67 step=4000/7516 loss=3.8874 | lr=5.00e-06
+  [14:55:10] ep=67 step=4500/7516 loss=2.5579 | lr=5.00e-06
+  [14:55:53] ep=67 step=5000/7516 loss=1.9499 | lr=5.00e-06
+  [14:56:35] ep=67 step=5500/7516 loss=2.3106 | lr=5.00e-06
+  [14:57:18] ep=67 step=6000/7516 loss=1.9928 | lr=5.00e-06
+  [14:58:01] ep=67 step=6500/7516 loss=2.3710 | lr=5.00e-06
+  [14:58:43] ep=67 step=7000/7516 loss=2.2376 | lr=5.00e-06
+  [14:59:26] ep=67 step=7500/7516 loss=5.7709 | lr=5.00e-06
+[14:59:28] Epoch 67/70 | loss=3.1098 | lr=5.00e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [15:00:11] ep=68 step=500/7516 loss=4.1472 | lr=5.00e-06
+  [15:00:54] ep=68 step=1000/7516 loss=2.8170 | lr=5.00e-06
+  [15:01:37] ep=68 step=1500/7516 loss=2.3498 | lr=5.00e-06
+  [15:02:19] ep=68 step=2000/7516 loss=2.0838 | lr=5.00e-06
+  [15:03:02] ep=68 step=2500/7516 loss=2.3264 | lr=5.00e-06
+  [15:03:45] ep=68 step=3000/7516 loss=6.4977 | lr=5.00e-06
+  [15:04:28] ep=68 step=3500/7516 loss=2.2563 | lr=5.00e-06
+  [15:05:10] ep=68 step=4000/7516 loss=2.2569 | lr=5.00e-06
+  [15:05:53] ep=68 step=4500/7516 loss=2.6902 | lr=5.00e-06
+  [15:06:36] ep=68 step=5000/7516 loss=6.8514 | lr=5.00e-06
+  [15:07:18] ep=68 step=5500/7516 loss=2.5175 | lr=5.00e-06
+  [15:08:01] ep=68 step=6000/7516 loss=2.4825 | lr=5.00e-06
+  [15:08:44] ep=68 step=6500/7516 loss=1.7722 | lr=5.00e-06
+  [15:09:27] ep=68 step=7000/7516 loss=3.1124 | lr=5.00e-06
+  [15:10:09] ep=68 step=7500/7516 loss=4.0549 | lr=5.00e-06
+[15:10:11] Epoch 68/70 | loss=3.0628 | lr=5.00e-06 | 10.7min
+[15:10:49] Val mAP=0.4127 | mAP50=0.8358 | avg_preds=10.0 | max_score=0.9934
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [15:11:32] ep=69 step=500/7516 loss=3.7290 | lr=5.00e-06
+  [15:12:14] ep=69 step=1000/7516 loss=2.4451 | lr=5.00e-06
+  [15:12:57] ep=69 step=1500/7516 loss=4.4066 | lr=5.00e-06
+  [15:13:40] ep=69 step=2000/7516 loss=3.8002 | lr=5.00e-06
+  [15:14:22] ep=69 step=2500/7516 loss=1.8073 | lr=5.00e-06
+  [15:15:05] ep=69 step=3000/7516 loss=2.3858 | lr=5.00e-06
+  [15:15:47] ep=69 step=3500/7516 loss=4.2002 | lr=5.00e-06
+  [15:16:30] ep=69 step=4000/7516 loss=4.7509 | lr=5.00e-06
+  [15:17:13] ep=69 step=4500/7516 loss=4.6285 | lr=5.00e-06
+  [15:17:56] ep=69 step=5000/7516 loss=2.7505 | lr=5.00e-06
+  [15:18:39] ep=69 step=5500/7516 loss=2.5219 | lr=5.00e-06
+  [15:19:21] ep=69 step=6000/7516 loss=2.7396 | lr=5.00e-06
+  [15:20:04] ep=69 step=6500/7516 loss=5.5243 | lr=5.00e-06
+  [15:20:46] ep=69 step=7000/7516 loss=4.7352 | lr=5.00e-06
+  [15:21:29] ep=69 step=7500/7516 loss=1.9543 | lr=5.00e-06
+[15:21:30] Epoch 69/70 | loss=3.1191 | lr=5.00e-06 | 10.7min
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+  [15:22:13] ep=70 step=500/7516 loss=2.7344 | lr=5.00e-06
+  [15:22:56] ep=70 step=1000/7516 loss=2.0636 | lr=5.00e-06
+  [15:23:38] ep=70 step=1500/7516 loss=2.3707 | lr=5.00e-06
+  [15:24:21] ep=70 step=2000/7516 loss=3.7369 | lr=5.00e-06
+  [15:25:04] ep=70 step=2500/7516 loss=3.9603 | lr=5.00e-06
+  [15:25:46] ep=70 step=3000/7516 loss=2.5322 | lr=5.00e-06
+  [15:26:29] ep=70 step=3500/7516 loss=2.5824 | lr=5.00e-06
+  [15:27:12] ep=70 step=4000/7516 loss=4.1980 | lr=5.00e-06
+  [15:27:55] ep=70 step=4500/7516 loss=2.5993 | lr=5.00e-06
+  [15:28:37] ep=70 step=5000/7516 loss=5.2799 | lr=5.00e-06
+  [15:29:19] ep=70 step=5500/7516 loss=12.0149 | lr=5.00e-06
+  [15:30:02] ep=70 step=6000/7516 loss=2.3670 | lr=5.00e-06
+  [15:30:45] ep=70 step=6500/7516 loss=3.5136 | lr=5.00e-06
+  [15:31:28] ep=70 step=7000/7516 loss=3.4910 | lr=5.00e-06
+  [15:32:10] ep=70 step=7500/7516 loss=2.2198 | lr=5.00e-06
+[15:32:12] Epoch 70/70 | loss=3.0719 | lr=5.00e-06 | 10.7min
+[15:32:50] Val mAP=0.4114 | mAP50=0.8355 | avg_preds=10.0 | max_score=0.9933
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 12.36it/s]
+  → Periodic checkpoint saved to ./checkpoints_hw2.1/epoch_70
+  → Training curve saved: ./best_model_hw2.1/training_curve.png
+Training done. Best mAP = 0.4143
