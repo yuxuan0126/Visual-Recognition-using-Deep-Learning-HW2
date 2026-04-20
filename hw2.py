@@ -1,5 +1,5 @@
 """
-hw2_v16.py — DETR Digit Detection
+hw2.py — DETR Digit Detection
 - ResNet-50 backbone: pretrained weights only
 - Encoder/Decoder: trained from scratch
 - Optimized for NVIDIA RTX 4090 (24GB VRAM)
