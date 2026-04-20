@@ -1,5 +1,8 @@
 # Visual-Recognition-using-Deep-Learning-HW2
 314706009 王妤瑄
+
+---
+
 ## Introduction
 This project implements a **DEtection TRansformer (DETR)** model for
 digit detection (digits 0-9). The architecture is designed to meet
@@ -75,15 +78,17 @@ RUN_MODE=eval python hw2.py
 ---
 
 ## Performance Snapshot
-
-Training Configuration:
+![pic](snapshot.png)
+### Training Configuration:
 * **Batch Size**: 4 (Effective batch size of 12 via 3-step
 gradient accumulation).
 * **Learning Rate**: 1e-4 for the Transformer and 1e-5 for the
 Backbone.
 * **Scheduler**: Linear warmup (5 epochs) followed by Cosine Decay.
-Inference Parameters:
+### Inference Parameters:
 * **Prediction Threshold**: 0.05.
 * **Top-K Detections**: Limits output to the top 30 scoring boxes
 per image.
-![pic](snapshot.png)
+
+---
+
