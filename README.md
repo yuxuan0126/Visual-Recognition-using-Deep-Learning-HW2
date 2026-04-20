@@ -76,13 +76,13 @@ RUN_MODE=eval python hw2.py
 
 ## Performance Snapshot
 
-* **Training Configuration**:
+Training Configuration:
 * **Batch Size**: 4 (Effective batch size of 12 via 3-step
 gradient accumulation).
 * **Learning Rate**: 1e-4 for the Transformer and 1e-5 for the
 Backbone.
 * **Scheduler**: Linear warmup (5 epochs) followed by Cosine Decay.
-* **Inference Parameters**:
+Inference Parameters:
 * **Prediction Threshold**: 0.05.
 * **Top-K Detections**: Limits output to the top 30 scoring boxes
 per image.
