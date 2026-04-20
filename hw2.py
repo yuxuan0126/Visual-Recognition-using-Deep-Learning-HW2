@@ -2,7 +2,7 @@
 hw2_v16.py — DETR Digit Detection
 - ResNet-50 backbone: pretrained weights only
 - Encoder/Decoder: trained from scratch
-- Optimized for NVIDIA RTX 3080 (10GB VRAM)
+- Optimized for NVIDIA RTX 4090 (24GB VRAM)
 - category_id: 1~10 (maps to digits 0~9)
 
 Usage:
@@ -46,7 +46,7 @@ TEST_IMG_DIR = os.environ.get("TEST_IMG_DIR", "./data/test")
 TEST_JSON = os.environ.get("TEST_JSON", "./data/test.json")
 
 RUN_MODE = os.environ.get("RUN_MODE", "train").lower()
-CHECKPOINT_DIR = os.environ.get("CHECKPOINT_DIR", "./best_model_hw2.1")
+CHECKPOINT_DIR = os.environ.get("CHECKPOINT_DIR", "./best_model_hw2")
 OUTPUT_JSON = os.environ.get("OUTPUT_JSON", "pred.json")
 
 SEED = int(os.environ.get("SEED", "42"))
@@ -726,7 +726,7 @@ def train():
         history["val_map50"].append(cur_map50)
 
         if (epoch + 1) % 5 == 0:
-            periodic_path = f"./checkpoints_hw2.1/epoch_{epoch+1}"
+            periodic_path = f"./checkpoints_hw2/epoch_{epoch+1}"
             os.makedirs(periodic_path, exist_ok=True)
             ema_model.save_pretrained(periodic_path)
             processor.save_pretrained(periodic_path)
