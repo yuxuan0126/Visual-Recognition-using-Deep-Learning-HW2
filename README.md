@@ -55,7 +55,7 @@ python hw2.py
 * **Backbone Freezing**: The backbone remains frozen for the first 5
 epochs.
 * **Checkpoints**: The best model is saved to `./best_model_hw2`.
-Periodic checkpoints are saved every 5 epochs.
+Periodic checkpoints are saved every 10 epochs.
 
 * **Visualization**: Training curves (Loss, mAP, LR) are automatically
 updated in `training_curve.png`.
@@ -77,7 +77,7 @@ RUN_MODE=eval python hw2.py
 ## Performance Snapshot
 
 * **Training Configuration**:
-* **Batch Size**: 12 (Effective batch size of 24 via 2-step
+* **Batch Size**: 4 (Effective batch size of 12 via 3-step
 gradient accumulation).
 * **Learning Rate**: 1e-4 for the Transformer and 1e-5 for the
 Backbone.
