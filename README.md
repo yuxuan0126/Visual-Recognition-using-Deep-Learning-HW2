@@ -63,16 +63,16 @@ Periodic checkpoints are saved every 10 epochs.
 * **Visualization**: Training curves (Loss, mAP, LR) are automatically
 updated in `training_curve.png`.
 
-### 2. Prediction Mode
-To generate predictions on the test set and export them to `pred.json`:
-```bash
-RUN_MODE=predict python hw2.py
-```
-
-### 3. Evaluation Mode
+### 2. Evaluation Mode
 To evaluate the saved checkpoint against the validation set:
 ```bash
 RUN_MODE=eval python hw2.py
+```
+
+### 3. Prediction Mode
+To generate predictions on the test set and export them to `pred.json`:
+```bash
+python soup.py
 ```
 
 ---
