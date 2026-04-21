@@ -7,8 +7,8 @@ hw2.py — DETR Digit Detection
 
 Usage:
   train:   python hw2.py
-  predict: RUN_MODE=predict python hw2.py
   eval:    RUN_MODE=eval python hw2.py
+  predict: python soup.py
 """
 
 import json
